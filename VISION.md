@@ -28,15 +28,21 @@ Building blocks, in order:
 
 1. **Chunked world map** with regions ("zones") carrying metadata: name, difficulty, theme,
    background art, music. Districts are designed for the city, connected by rooftops.
-2. **Gates.** A run is a trigger at a start line plus its checkpoints and finish. Touching the
+2. **Regions and their hubs.** Every region of the world has a hub: a safe place where its
+   runners arrive, meet and set out from. A hub a player has reached once is a destination for
+   good: from any hub they can teleport straight to any other hub they know, so the regions
+   are quick to move between while the city between hubs is still crossed on foot. A fall or a
+   fail ("death") brings the runner back to the hub of the region they are in, and empties
+   their inventory, if the game has one (whether it does is open).
+3. **Gates.** A run is a trigger at a start line plus its checkpoints and finish. Touching the
    gate starts a timer for that player; the run ends at the finish or when the player leaves
    the route corridor. Several players can be in the same run at once, each on their own timer.
-3. **Rooms of dozens of players.** A room is a world instance; the server relays input events
+4. **Rooms of dozens of players.** A room is a world instance; the server relays input events
    with step numbers (lockstep with a small fixed delay, no rollback, because runners never
    interact). Late joiners receive a snapshot of every runner and start stepping from there.
-4. **Interest management.** Clients only need runners within a few screens; the server filters
+5. **Interest management.** Clients only need runners within a few screens; the server filters
    by zone or chunk and the client extrapolates briefly when a packet is late.
-5. **Authoritative results.** Run results are computed by the server from the relayed inputs,
+6. **Authoritative results.** Run results are computed by the server from the relayed inputs,
    so leaderboards and live races share one source of truth.
 
 Directions this opens up:
@@ -55,6 +61,10 @@ Directions this opens up:
   with a free camera; live races can be watched from the rooftops.
 - **Co-op and relay formats.** Relays where each runner covers one segment, chase modes where
   catching means matching a line within a few frames, "follow the leader" trick chains.
+- **Secrets, very hard to reach.** Scattered over the whole open world: a ledge only the
+  longest wall-run chain reaches, a rooftop behind a gap that needs a perfect line, a room at
+  the top of the tallest crane. Nothing marks them on a map; finding one is a story to tell,
+  reaching it a feat. They are where the world rewards mastery rather than time spent.
 - **Cosmetics tied to exploration.** Hidden spots unlock skins; skins are data and never touch
   the simulation.
 - **Dynamic world dressing.** Time of day and weather in the background layers (purely
