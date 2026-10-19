@@ -1,0 +1,448 @@
+{
+  "format": 1,
+  "name": "Moss",
+  "district": "sewer",
+  "look": {
+    "hair": "hairShort",
+    "costume": "classic"
+  },
+  "start": {
+    "x": 99840,
+    "y": 114688,
+    "facing": -1
+  },
+  "runs": [
+    {
+      "steps": 9,
+      "held": 1
+    },
+    {
+      "steps": 3,
+      "held": 4
+    },
+    {
+      "steps": 18,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 5
+    },
+    {
+      "steps": 15,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 4
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 5
+    },
+    {
+      "steps": 12,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 4
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 5
+    },
+    {
+      "steps": 15,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 12,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 9,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 3,
+      "held": 4
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 3,
+      "held": 10
+    },
+    {
+      "steps": 12,
+      "held": 1
+    },
+    {
+      "steps": 12,
+      "held": 2
+    },
+    {
+      "steps": 1,
+      "held": 0
+    },
+    {
+      "steps": 12,
+      "held": 1
+    },
+    {
+      "steps": 6,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 18,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 5
+    },
+    {
+      "steps": 21,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 10
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 10
+    },
+    {
+      "steps": 42,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 5
+    },
+    {
+      "steps": 21,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 18,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 5
+    },
+    {
+      "steps": 21,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 5
+    },
+    {
+      "steps": 26,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 12,
+      "held": 2
+    },
+    {
+      "steps": 6,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 6,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 4
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 6,
+      "held": 0
+    },
+    {
+      "steps": 6,
+      "held": 10
+    },
+    {
+      "steps": 9,
+      "held": 2
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 12,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 18,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 18,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 4
+    },
+    {
+      "steps": 6,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 3,
+      "held": 4
+    },
+    {
+      "steps": 12,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 10
+    },
+    {
+      "steps": 12,
+      "held": 2
+    },
+    {
+      "steps": 3,
+      "held": 10
+    },
+    {
+      "steps": 24,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 15,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 12,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 3,
+      "held": 5
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 10
+    },
+    {
+      "steps": 12,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 21,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 3,
+      "held": 5
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 4
+    },
+    {
+      "steps": 12,
+      "held": 2
+    },
+    {
+      "steps": 15,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 33,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 24,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 9,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 6,
+      "held": 9
+    },
+    {
+      "steps": 1,
+      "held": 0
+    }
+  ]
+}

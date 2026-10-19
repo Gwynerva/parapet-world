@@ -1,0 +1,52 @@
+; Sewer, far east: the siphon and the east cistern.
+; Lines: the walkway (floor row 22) anyone can run; the middle line (row 15-16); the high line (row 8-12).
+; Siphon (x 0-31): the walkway dives through a culvert; the siphon roof is the middle line (posts, an arch to
+; slide under); a brick chimney and a hanging wall (x 17-24) make a tic-tac shaft over a high ledge (row 12).
+; East cistern (x 32-63): a grate bridge out to the landing under the east manhole (x 44); pillars, a buttress
+; and the great pipe for the bravest. A fall into the cistern is fatal.
+@district sewer
+@pos 192 96
+@size 64 32
+
+############################################H###################
+############################################H###################
+....######.............##.......######......H................###
+.....####..............##........####.......H................###
+.................####..##...................H................###
+.................####..##...................H................###
+.................####..##...................H................###
+.................####..##.............-...-.H................###
+.................####..##...................H..............rr###
+.................####..##...................H..............rr###
+kkkk........................kkkkkkk.........H..............rr###
+........####................................H..............rr###
+........####..kkkkkkkkkkkkk.................H..............rr###
+........####................................H...........rr.rr###
+........ssss................................H...........rr.rr###
+.....n.........n............................H...........rr.rr###
+..kkkkkkkkkkkkkkkkkkkkkkkk..==H===...=======H........rr.rr.rr###
+..########################....H.............H........rr.rr.rr###
+..########################....H.............H........rr.rr.rr###
+..########################....H.............H....rr..rr.rr.rr###
+..########################....H.............H.k..rr..rr.rr.rr###
+..########################....H.............H.k..rr..rr.rr.rr###
+\........................../kkkkkk========kkkkk..rr..rr.rr.rr###
+#\......................../#kkkkkk...rr...kkkkk..rr..rr.rr.rr###
+##\....................../########...rr...rrrrr..rr..rr.rr.rr###
+###\..................../#########...rr...rrrrr..rr..rr.rr.rr###
+####kkkkkkkkkkkkkkkkkkkk##########~~~rr~~~rrrrr~~rr~~rr~rr~rr###
+##################################~~~rr~~~rrrrr~~rr~~rr~rr~rr###
+##################################~~~rr~~~rrrrr~~rr~~rr~rr~rr###
+################################################################
+################################################################
+################################################################
+
+@prop valve 13 25
+@prop pipe.big 48 6
+@prop pipe.big 52 6
+
+@region sewer-cistern hub=sewer
+; Find (hard): wall run up the chimney from the arch, or tic-tac up the gap beside it.
+@find sew-chimney 17 0 4 4 clue="On top of the brick chimney above the siphon"
+; Find (really hard): up the pillars, a wall run up the buttress, onto the great pipe.
+@find sew-cistern 48 2 8 4 clue="On the great pipe high in the east cistern"

@@ -1,0 +1,76 @@
+; Sewer, west: the outfall and the brick galleries.
+; Lines: the walkway (floor row 22) anyone can run; the middle line (row 15-16); the high line (row 8-12).
+; Outfall (x 0-31): the old sluice gate (x 7) hides a find; the outfall ladder (x 11) links all three lines.
+; Galleries (x 32-63): the west manhole up to the warehouses (x 36). On the brick gallery an arch to slide
+; under (x 44-47), a barrel and two crates to vault, holes over the channels; bars under the vault (x 51-59).
+@district sewer
+@pos 0 96
+@size 64 32
+
+####################################H###########################
+####################################H###########################
+########....######........######....H...........######........##
+########.....####..........####.....H............####..........#
+########............................H.............##............
+########............................H...........................
+########............................H...........................
+########............................H..............-...-...-....
+########............................H...........................
+########............................H...........................
+########kkkHkkkk..........kkkkkkkkkkH.......####..............kk
+########...H........................H.......####................
+########...H........................H.......####................
+########...H........................H.......####................
+########...H........................H.......ssss................
+########...H........................H...........................
+########...H========.........kkkkkkkHkk...kkkkkkkkkkkk...kkkkkkk
+########...H........................H...........................
+##.........H........................H...........................
+##.........H........................H...........................
+##.........H........................H...........................
+##.........H........................H...........................
+##kkkkkkkkkkkkkkkk====kkkkkkkkkkkkkkkk====kkkkkkkkkkkk====kkkkkk
+##kkkkkkkkkkkkkkkk~~~~kkkkkkkkkkkkkkkk~~~~kkkkkkkkkkkk~~~~kkkkkk
+##################~~~~################~~~~############~~~~######
+##################~~~~################~~~~############~~~~######
+##################~~~~################~~~~############~~~~######
+##################~~~~################~~~~############~~~~######
+################################################################
+################################################################
+################################################################
+################################################################
+
+@prop sluice 7 18
+@prop valve 3 21
+@prop valve 9 21
+@prop pipe.big 23 16
+@prop pipe.big 19 10
+@prop barrel 50 15
+@prop crate 59 15
+@prop crate 60 15
+@prop pipe.big 39 10
+@prop rubble 31 15
+@prop valve 33 21
+
+@region sewer-west hub=sewer
+
+; Easy: the whole walkway, west to east, ground moves only.
+@route sew-dry-feet name="Dry Feet" difficulty=1
+@start 10 18 1 4
+@checkpoint 77 15 1 4
+@checkpoint 142 15 1 4
+@checkpoint 180 18 1 4
+@checkpoint 206 22 1 4
+@finish 236 18 1 4
+@corridor 2 2 252 27
+
+; Hard: west along the high line from the hub to the outfall, back east along the middle line.
+@route sew-galleries name="Brick Galleries" difficulty=3
+@start 97 6 1 4
+@checkpoint 45 6 1 4
+@checkpoint 13 12 1 4
+@checkpoint 45 13 1 3
+@finish 98 12 1 4
+@corridor 2 2 98 27
+; Find (tricky): slide or roll under the stuck sluice gate.
+@find sew-sluice 2 18 5 4 clue="Behind the old sluice gate at the end of the walkway"

@@ -1,0 +1,324 @@
+{
+  "format": 1,
+  "name": "Drip",
+  "district": "sewer",
+  "look": {
+    "hair": "hairRed",
+    "costume": "summer"
+  },
+  "start": {
+    "x": 13824,
+    "y": 108544,
+    "facing": 1
+  },
+  "runs": [
+    {
+      "steps": 6,
+      "held": 10
+    },
+    {
+      "steps": 6,
+      "held": 2
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 24,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 21,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 9,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 3,
+      "held": 5
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 24,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 6,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 3,
+      "held": 10
+    },
+    {
+      "steps": 8,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 15,
+      "held": 0
+    },
+    {
+      "steps": 6,
+      "held": 1
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 15,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 8
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 8
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 18,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 8
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 9,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 3,
+      "held": 8
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 6,
+      "held": 5
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 12,
+      "held": 1
+    },
+    {
+      "steps": 6,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 3,
+      "held": 10
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 3,
+      "held": 10
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 8
+    },
+    {
+      "steps": 3,
+      "held": 5
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 3,
+      "held": 10
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 3,
+      "held": 5
+    },
+    {
+      "steps": 18,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 3,
+      "held": 5
+    },
+    {
+      "steps": 24,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 5
+    },
+    {
+      "steps": 21,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 5
+    },
+    {
+      "steps": 21,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 5
+    },
+    {
+      "steps": 21,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 5
+    },
+    {
+      "steps": 21,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 5
+    },
+    {
+      "steps": 21,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 9
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 10
+    },
+    {
+      "steps": 6,
+      "held": 2
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 8,
+      "held": 0
+    }
+  ]
+}

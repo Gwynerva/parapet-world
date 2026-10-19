@@ -1,0 +1,62 @@
+; Rooftops on the factory, west: the sawtooth hall roof with the roof hatch (x 150), the office
+; tower with its antenna, the cables to the old water tower.
+@district rooftops
+@pos 128 0
+@size 64 32
+@legend Y material=fac.beam
+@legend A material=fac.beam cell=LADDER
+@legend B material=roof.sheet cell=SLOPE_UP
+@legend F prop=ladder.fac
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+...................................P
+...................................P......................YYYYYY
+...................................P
+...................................P.....------------
+...................................P
+.................................H######H
+.................................H######H............YYAYY
+.................................H######H..............A
+.................................H######H..............A
+.................................HbbbbbbH..............A
+.........P.......................H######H..............A
+.........P.......................H######H..............A
+.........P.......................H######H..............A
+.........P.......................HbbbbbbH..............A
+.........P....Bm..Bm......Bm..Bm.H######H..............A
+...........mmmmmmmmmmmFmmmmmmmmmmm######mmmmmmmmmmmmmmmmmmmmmmmm
+mmmmmmmmmmmmmmmmmmmmmmFmmmmmmmmmmm######mmmmmmmmmmmmmmmmmmmmmmmm
+mmmmmmmmmmmmmmmmmmmmmmFmmmmmmmmmmmbbbbbbmmmmmmmmmmmmmmmmmmmmmmmm
+mmmmmmmmmmmmmmmmmmmmmmFmmmmmmmmmmm######mmmmmmmmmmmmmmmmmmmmmmmm
+mmmmmmmmmmmmmmmmmmmmmmFmmmmmmmmmmm######mmmmmmmmmmmmmmmmmmmmmmmm
+mmmmmmmmmmmmmmmmmmmmmmFmmmmmmmmmmm######mmmmmmmmmmmmmmmmmmmmmmmm
+mmmmmmmmmmmmmmmmmmmmmmFmmmmmmmmmmmbbbbbbmmmmmmmmmmmmmmmmmmmmmmmm
+mmmmmmmmmmmmmmmmmmmmmmFmmmmmmmmmmm######mmmmmmmmmmmmmmmmmmmmmmmm
+
+@prop skylight 16 23
+@prop skylight 24 23
+@prop ac.unit 37 13
+@prop water.tank 54 12
+@prop ac.unit 44 23
+@prop vent.duct 47 23
+@prop ac.unit 60 23
+@prop billboard 3 22
+
+@region rooftops-factory-west 0 0 64 32 hub=rooftops
+@route rooftops-factory-heights name="Factory Heights" difficulty=3
+@start 4 18 2 3
+@checkpoint 36 10 1 4
+@checkpoint 56 11 1 4
+@checkpoint 72 6 1 4
+@checkpoint 91 6 1 4
+@finish 115 20 1 4
+@corridor -16 0 142 32
+@find rooftops-water-tower 54 9 3 3 clue="On the tank of the old water tower"

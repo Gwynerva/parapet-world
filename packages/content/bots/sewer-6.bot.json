@@ -1,0 +1,152 @@
+{
+  "format": 1,
+  "name": "Weir",
+  "district": "sewer",
+  "look": {
+    "hair": "hairShort",
+    "costume": "tee"
+  },
+  "start": {
+    "x": 139776,
+    "y": 117760,
+    "facing": -1
+  },
+  "runs": [
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 3,
+      "held": 5
+    },
+    {
+      "steps": 6,
+      "held": 6
+    },
+    {
+      "steps": 3,
+      "held": 4
+    },
+    {
+      "steps": 3,
+      "held": 10
+    },
+    {
+      "steps": 9,
+      "held": 2
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 3,
+      "held": 5
+    },
+    {
+      "steps": 5,
+      "held": 0
+    },
+    {
+      "steps": 6,
+      "held": 2
+    },
+    {
+      "steps": 3,
+      "held": 10
+    },
+    {
+      "steps": 9,
+      "held": 2
+    },
+    {
+      "steps": 3,
+      "held": 4
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 8
+    },
+    {
+      "steps": 15,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 5,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 17,
+      "held": 0
+    },
+    {
+      "steps": 6,
+      "held": 2
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 5
+    },
+    {
+      "steps": 6,
+      "held": 0
+    },
+    {
+      "steps": 12,
+      "held": 6
+    },
+    {
+      "steps": 12,
+      "held": 0
+    },
+    {
+      "steps": 12,
+      "held": 1
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 32,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 9
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 21,
+      "held": 0
+    }
+  ]
+}

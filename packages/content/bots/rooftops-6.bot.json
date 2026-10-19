@@ -1,0 +1,200 @@
+{
+  "format": 1,
+  "name": "Jay",
+  "district": "rooftops",
+  "look": {
+    "hair": "hairShort",
+    "costume": "hoodie"
+  },
+  "start": {
+    "x": 139776,
+    "y": 25600,
+    "facing": 1
+  },
+  "runs": [
+    {
+      "steps": 12,
+      "held": 2
+    },
+    {
+      "steps": 3,
+      "held": 4
+    },
+    {
+      "steps": 21,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 21,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 24,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 24,
+      "held": 4
+    },
+    {
+      "steps": 3,
+      "held": 8
+    },
+    {
+      "steps": 21,
+      "held": 6
+    },
+    {
+      "steps": 3,
+      "held": 8
+    },
+    {
+      "steps": 27,
+      "held": 6
+    },
+    {
+      "steps": 12,
+      "held": 0
+    },
+    {
+      "steps": 9,
+      "held": 2
+    },
+    {
+      "steps": 6,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 9,
+      "held": 8
+    },
+    {
+      "steps": 6,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 3,
+      "held": 8
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 12,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 6,
+      "held": 0
+    },
+    {
+      "steps": 6,
+      "held": 1
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 15,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 5
+    },
+    {
+      "steps": 21,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 24,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 9,
+      "held": 0
+    }
+  ]
+}

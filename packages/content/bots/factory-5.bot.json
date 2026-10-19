@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "name": "Flux",
+  "district": "factory",
+  "look": {
+    "hair": "hairShort",
+    "costume": "tee"
+  },
+  "start": {
+    "x": 253440,
+    "y": 65536,
+    "facing": -1
+  },
+  "runs": [
+    {
+      "steps": 38,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 32,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 26,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 26,
+      "held": 1
+    },
+    {
+      "steps": 42,
+      "held": 5
+    },
+    {
+      "steps": 16,
+      "held": 9
+    },
+    {
+      "steps": 69,
+      "held": 1
+    },
+    {
+      "steps": 16,
+      "held": 0
+    },
+    {
+      "steps": 66,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 10,
+      "held": 2
+    },
+    {
+      "steps": 20,
+      "held": 10
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 6,
+      "held": 0
+    },
+    {
+      "steps": 4,
+      "held": 6
+    },
+    {
+      "steps": 52,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 14,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 6
+    },
+    {
+      "steps": 24,
+      "held": 0
+    },
+    {
+      "steps": 1,
+      "held": 2
+    },
+    {
+      "steps": 8,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 6,
+      "held": 0
+    },
+    {
+      "steps": 37,
+      "held": 2
+    },
+    {
+      "steps": 24,
+      "held": 0
+    },
+    {
+      "steps": 1,
+      "held": 1
+    },
+    {
+      "steps": 16,
+      "held": 0
+    }
+  ]
+}

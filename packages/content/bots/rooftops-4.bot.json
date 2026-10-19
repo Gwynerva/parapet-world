@@ -1,0 +1,132 @@
+{
+  "format": 1,
+  "name": "Rook",
+  "district": "rooftops",
+  "look": {
+    "hair": "hairShort",
+    "costume": "summer"
+  },
+  "start": {
+    "x": 50688,
+    "y": 24576,
+    "facing": 1
+  },
+  "runs": [
+    {
+      "steps": 9,
+      "held": 2
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 42,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 6,
+      "held": 0
+    },
+    {
+      "steps": 9,
+      "held": 1
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 6,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 12,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 5
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 6,
+      "held": 0
+    },
+    {
+      "steps": 9,
+      "held": 1
+    },
+    {
+      "steps": 3,
+      "held": 4
+    },
+    {
+      "steps": 9,
+      "held": 0
+    },
+    {
+      "steps": 9,
+      "held": 1
+    },
+    {
+      "steps": 3,
+      "held": 4
+    },
+    {
+      "steps": 9,
+      "held": 0
+    },
+    {
+      "steps": 9,
+      "held": 1
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 9,
+      "held": 0
+    }
+  ]
+}

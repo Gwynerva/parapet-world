@@ -1,0 +1,312 @@
+{
+  "format": 1,
+  "name": "Rill",
+  "district": "sewer",
+  "look": {
+    "hair": "hairRed",
+    "costume": "tee"
+  },
+  "start": {
+    "x": 105984,
+    "y": 120832,
+    "facing": -1
+  },
+  "runs": [
+    {
+      "steps": 3,
+      "held": 9
+    },
+    {
+      "steps": 6,
+      "held": 1
+    },
+    {
+      "steps": 3,
+      "held": 4
+    },
+    {
+      "steps": 18,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 5
+    },
+    {
+      "steps": 12,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 5
+    },
+    {
+      "steps": 6,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 5
+    },
+    {
+      "steps": 9,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 6,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 5
+    },
+    {
+      "steps": 12,
+      "held": 0
+    },
+    {
+      "steps": 6,
+      "held": 8
+    },
+    {
+      "steps": 3,
+      "held": 5
+    },
+    {
+      "steps": 12,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 5
+    },
+    {
+      "steps": 3,
+      "held": 8
+    },
+    {
+      "steps": 21,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 5,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 30,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 30,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 30,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 22,
+      "held": 0
+    },
+    {
+      "steps": 9,
+      "held": 2
+    },
+    {
+      "steps": 3,
+      "held": 10
+    },
+    {
+      "steps": 3,
+      "held": 5
+    },
+    {
+      "steps": 3,
+      "held": 10
+    },
+    {
+      "steps": 9,
+      "held": 2
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 30,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 30,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 30,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 6,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 6,
+      "held": 4
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 30,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 30,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 12,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 6,
+      "held": 5
+    },
+    {
+      "steps": 2,
+      "held": 0
+    }
+  ]
+}

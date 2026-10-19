@@ -1,0 +1,72 @@
+; Sewer, middle: the overflow weir and the Old Junction hub under the warehouse yard.
+; Lines: the walkway (floor row 22) anyone can run; the middle line (row 15-16); the high line (row 8-12).
+; Overflow weir (x 0-31): the walkway climbs over the weir; the weir gallery (row 15) has a sluice gate to climb
+; and a ladder (x 2); on the high line a down-pipe to swing round (x 6) and bars over the overflow basin.
+; Old Junction (x 32-63): the hub under the yard manhole (x 36); a ladder from the channel bridge (x 54).
+; Routes that run west of here live in west.room.txt, so their numbers stay positive.
+@district sewer
+@pos 64 96
+@size 64 32
+
+####################################H###########################
+####################################H###########################
+####..........######................H...........########........
+###............####.................H............######.........
+##....P.............................H.............####..........
+......P.............................H...........................
+......P................-...-...-....H...........................
+......P.............................H...........................
+......P.............................H...........................
+................kkkk................H....................kkkk...
+kkk.............................====H====..........kkk..........
+....................................H...........................
+....................................H...........................
+....................................H...........................
+....................................H...........................
+==H=========........................H...........................
+..H..................===============H===========......H=========
+..H.................................H.................H.........
+..H.................................H.................H.........
+..H...../kkkkkkkk\..................H.................H.........
+..H..../#kkkkkkkk#\.................H.................H.........
+..H.../##kkkkkkkk##\................H.................H.........
+kkkkkkkkkkkkkkkkkkkkk==========kkkkkkkkkkkkkkkkkkkkk=====kkkkkkk
+kkkkkkkkkkkkkkkkkkkkk..........kkkkkkkkkkkkkkkkkkkkk~~~~~kkkkkkk
+#####################~~~~~~~~~~#####################~~~~~#######
+#####################~~~~~~~~~~#####################~~~~~#######
+#####################~~~~~~~~~~#####################~~~~~#######
+#####################~~~~~~~~~~#####################~~~~~#######
+#####################~~~~~~~~~~#################################
+################################################################
+################################################################
+################################################################
+
+@prop sluice 6 12
+@prop pipe.big 14 15
+@prop pipe.big 10 10
+@prop pipe.big 48 16
+@prop pipe.big 44 10
+@prop hub.sign.sewer 43 20
+@prop valve 34 21
+
+@region sewer-junction hub=sewer
+@hub sewer 33 18 15 4 spawn=40,21 name="Old Junction"
+
+; Medium: the middle line east from the hub: bars over the collector, vaults, slides.
+@route sew-collector name="Collector Run" difficulty=2
+@start 38 12 1 4
+@checkpoint 63 12 1 4
+@checkpoint 96 12 1 4
+@checkpoint 141 12 1 4
+@finish 169 12 1 4
+@corridor 34 2 140 27
+
+; Expert: the high line east from the hub over open sewage, down the east manhole, up the cistern.
+@route sew-overflow name="Overflow" difficulty=4
+@start 39 6 1 4
+@checkpoint 94 4 1 4
+@checkpoint 119 6 1 4
+@checkpoint 149 8 1 4
+@checkpoint 168 5 1 5
+@finish 187 4 2 4
+@corridor 37 2 153 27

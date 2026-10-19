@@ -1,0 +1,107 @@
+; Warehouses, west: the old brick warehouse, six storeys and the freight lift shaft.
+@district warehouses
+@pos 0 32
+@size 32 64
+
+################################
+################################
+bb..b.........................bb
+bb..b.........................bb
+bb..b.........................bb
+bb..b....-----------------....bb
+bb..b.........................bb
+bb..b
+bb..b
+bb..b
+bb..b
+bb..b##H########################
+bb..b..H......................bb
+bb..b..H......................bb
+bb..b..H......................bb
+bb..b..H..----------..........bb
+bb..b..H
+bb..b..H
+bb..b..H
+bb..b..H
+bb==b###########==#########H####
+bb..b.........b......b.....H..bb
+bb..b.........b......b.....H..bb
+bb..b.........b......b.....H..bb
+bb..b.........b......b.....H..bb
+bb..b.........b......b.....H
+bb..b.........b......b.....H
+bb...................s.....H
+bb.........................H
+bb==b##H##==####################
+bb..b..H......................bb
+bb..b..H......................bb
+bb..b..H......................bb
+bb..b..H......................bb
+bb..b..H....H=========
+bb..b..H....H
+bb..b..H....H
+bb..b..H....H
+bb==b############==########H####
+bb..b......................H..bb
+bb..b......................H..bb
+bb..b......................H..bb
+bb..b......................H..bb
+bb..b......................H
+bb..b......................H
+bb..b......................H
+bb..b......................H
+bb==b##H########################
+bb..b..H......................bb
+bb..b..H......................bb
+bb..b..H......................bb
+bb..b..H......................bb
+bb..b..H
+bb..b..H
+bb.....H
+bb.....H
+################################
+################################
+################################
+################################
+################################
+################################
+################################
+################################
+
+@prop forklift 10 54
+@prop pallet 15 55
+@prop pallet 19 55
+@prop barrel 25 55
+@prop rack 10 44
+@prop rack 13 44
+@prop crate 11 43
+@prop crate 15 43
+@prop crate 19 46
+@prop crate 20 46
+@prop rack 23 44
+@prop crate 22 37
+@prop crate 23 37
+@prop crate 24 37
+@prop crate 17 28
+@prop crate 24 28
+@prop rack 21 17
+@prop crate 12 19
+@prop crate 11 10
+@prop crate 12 10
+@prop crate 13 10
+@prop crate 18 10
+@prop crate 19 10
+@prop crate 20 10
+@prop crate.big 14 9
+@prop crate.big 16 9
+
+@region warehouses-old-warehouse hub=warehouses
+@route warehouses-old-climb name="Old Warehouse Climb" difficulty=3
+@start 9 52 1 4
+@checkpoint 10 25 1 4
+@checkpoint 25 7 1 4
+@checkpoint 49 5 1 7
+@finish 62 7 1 4
+@corridor 2 2 64 56
+@find warehouses-attic 23 5 3 2 clue="Swinging in the attic of the old brick warehouse"
+@find warehouses-lift-top 2 2 2 2 clue="At the very top of the old freight lift"

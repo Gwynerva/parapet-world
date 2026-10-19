@@ -1,0 +1,51 @@
+; Rooftops on the factory, east: the light shaft (x 200-201), the tower crane, the stair tower
+; ladder (x 244), the water tank and the old chimney at the city's east wall.
+@district rooftops
+@pos 192 0
+@size 64 32
+@legend Y material=fac.beam
+@legend R material=fac.plate
+@legend A material=fac.beam cell=LADDER
+@legend F prop=ladder.fac
+
+.
+.
+.
+.
+.........................................................Hbbb.bb
+.........................................................Hbbb.bb
+......................Y..................................Hbbb.bb
+......................Y..................................Hbbb.bb
+......................Y......RR..........................Hbbb.bb
+......................Y......RR..........................H###.bb
+YYYYYYYYYYYYYYYYYYYYYYAYYYYYYYY..........................Hbbb.bb
+......................A..................................Hbbb.bb
+......................A...................P..............Hbbb.bb
+......................A...................P..............Hbbb.bb
+......................A...................P..............Hbbb.bb
+......................A...................P..............H###.bb
+......................A...................P..............Hbbb.bb
+......................A...................P..............Hbbb.bb
+......................A...................P..............Hbbb.bb
+......................A............H########.............Hbbb.bb
+......................A............H########..............bbb.bb
+......................A............Hbbbbbbbb..............###.bb
+......................A............H########..............bbb.bb
+......................A............H########..............bbb.bb
+mmmmmmmm..mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmFmmmmmmmmmbb
+mmmmmmmm..mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmFmmmmmmmmmbb
+mmmmmmmm..mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmFmmmmmmmmmbb
+mmmmmmmm..mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmFmmmmmmmmmbb
+mmmmmmmm..mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmFmmmmmmmmmbb
+mmmmmmmm..mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmFmmmmmmmmmbb
+mmmmmmmm..mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmFmmmmmmmmmbb
+mmmmmmmm..mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmFmmmmmmmmmbb
+
+@prop skylight 14 23
+@prop ac.unit 32 23
+@prop vent.duct 37 18
+@prop water.tank 53 21
+
+@region rooftops-factory-east 0 0 64 32 hub=rooftops
+@find rooftops-chimney 58 1 3 3 clue="On top of the old factory chimney"
+@find rooftops-crane-top 21 3 3 3 clue="At the very top of the tower crane"

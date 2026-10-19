@@ -1,0 +1,220 @@
+{
+  "format": 1,
+  "name": "Finch",
+  "district": "rooftops",
+  "look": {
+    "hair": "hairRed",
+    "costume": "summer"
+  },
+  "start": {
+    "x": 174592,
+    "y": 24576,
+    "facing": 1
+  },
+  "runs": [
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 9,
+      "held": 2
+    },
+    {
+      "steps": 6,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 15,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 6,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 3,
+      "held": 8
+    },
+    {
+      "steps": 24,
+      "held": 6
+    },
+    {
+      "steps": 3,
+      "held": 8
+    },
+    {
+      "steps": 21,
+      "held": 6
+    },
+    {
+      "steps": 3,
+      "held": 8
+    },
+    {
+      "steps": 24,
+      "held": 6
+    },
+    {
+      "steps": 3,
+      "held": 1
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 9,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 21,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 21,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 15,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 8
+    },
+    {
+      "steps": 6,
+      "held": 0
+    },
+    {
+      "steps": 9,
+      "held": 6
+    },
+    {
+      "steps": 6,
+      "held": 0
+    },
+    {
+      "steps": 6,
+      "held": 2
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 6,
+      "held": 2
+    },
+    {
+      "steps": 6,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 3,
+      "held": 6
+    },
+    {
+      "steps": 18,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 12,
+      "held": 0
+    },
+    {
+      "steps": 6,
+      "held": 1
+    },
+    {
+      "steps": 3,
+      "held": 0
+    },
+    {
+      "steps": 6,
+      "held": 1
+    },
+    {
+      "steps": 12,
+      "held": 0
+    },
+    {
+      "steps": 9,
+      "held": 2
+    },
+    {
+      "steps": 3,
+      "held": 10
+    },
+    {
+      "steps": 18,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 5
+    },
+    {
+      "steps": 18,
+      "held": 0
+    },
+    {
+      "steps": 3,
+      "held": 2
+    },
+    {
+      "steps": 6,
+      "held": 0
+    }
+  ]
+}

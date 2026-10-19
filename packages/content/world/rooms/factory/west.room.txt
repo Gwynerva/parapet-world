@@ -1,0 +1,136 @@
+; Factory floor, west: the street and high gates from the warehouses, the press shop and the crane hall.
+@district factory
+@pos 128 32
+@size 64 64
+@legend C prop=crate
+@legend j prop=chain
+@legend L prop=ladder.sew
+@legend h prop=chain.hook
+
+kkkkkkkkkkkkkkkkkkkkkkHkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+bbbbbbbbbbbbbbbbbbbbbbHbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bb....................H..j............................j.........
+bb....................H..j............................j.........
+bb....................H..j............................j.........
+bb....................H..j.....yyyy...................j.........
+bb....................H..j..-.........................j.........
+bb....................H..j............................j.........
+bb...H===============.H..j............................j.........
+bb...H................H..h............................j.........
+bb...H................H...............................j.........
+bb...H................H...............................j.........
+bb...H................H...............................j.........
+bb...H................H...............................j.........
+.....H................H...............................j.........
+.....H................H.......--......................j.........
+.....H...sss.......C..H.....................yyy.......j.........
+.....H............CC..H.....................yyy.......j.........
+yyyyyyyyyyyyyyyHyyyyyyyyyyyy......yy..yyyyyyyyyyyyy...j...yyyHyy
+bb.............H...................b..b....#####......j......H..
+bb.............H...................b..b....#####......h......H..
+bb.............H...................b..b......j...............H..
+bb.............H.............P.....b..b......j...............H..
+bb.............H.............P.....b..b......j...............H..
+bb.............H.............P.....b..b......j...............H..
+bb.H========================.P.....b==b===...j......============
+bb.H.........................P.....b..b......j..................
+bb.H.........................P.....b..b......j..................
+bb.H.........................P.....b..b......j..................
+bb.H.........................P.....b..b..--..j..--..............
+bb.H.........................P...............j..................
+bb.H..............C..........P...............j..................
+bb##########H###############..####H####......j......####.P.#####
+bb..........H.................yy..H..........j...........P......
+bb..........H.................yy..H..........j...........P......
+bb..........H.................yy..H..........j...........P......
+bb..........H.................yy..H..........j...........P......
+bb.......o..H.................yy..H..........j...........P......
+bb.H==========....============...=====.......j...........P..====
+bb.H...................yyyy..................j...........P......
+bb.H...................yyyy..................j...........P......
+bb.H.........---....===..................--..j..--.......P......
+bb.H.........................................j...........P......
+bb.H.........................................j...........P......
+bb=====H=====...=============.======H==......j......============
+bb.....H..............yyy...........H........j..................
+bb.....H..............yyy...........H........h..................
+bb.....H..............yyy...........H...........................
+bb.....H..............yyy...........H.........sss...............
+bb.....HC..CC..CC.....yyy...........H.......................C...
+....H#################yyy==============H..==========...=========
+....H..................................H........................
+....H..................................H........................
+....H..................................H........................
+....H..................................H........................
+....H...o.............o....oo....C.....H..oo.............C....C.
+####################################################L###########
+kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkLkkkkkkkkkkk
+kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkLkkkkkkkkkkk
+kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkLkkkkkkkkkkk
+kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkLkkkkkkkkkkk
+kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkLkkkkkkkkkkk
+kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkLkkkkkkkkkkk
+kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkLkkkkkkkkkkk
+
+@prop catwalk.rail 8 8
+@prop catwalk.rail 14 8
+@prop valve 54 10
+@prop catwalk.rail 20 25
+@prop catwalk.rail 52 25
+@prop valve 29 27
+@prop catwalk.rail 6 38
+@prop valve 57 40
+@prop machine 17 42
+@prop catwalk.rail 3 44
+@prop catwalk.rail 56 44
+@prop press 13 47
+@prop machine 18 48
+@prop machine 31 48
+@prop catwalk.rail 43 50
+@prop catwalk.rail 56 50
+@prop pallet 11 55
+@prop conveyor 15 55
+@prop conveyor 45 55
+
+@region factory-west hub=factory
+@find factory-press 13 48 2 1 clue="Under the big press by the street gate"
+@find factory-hook 44 46 3 2 clue="Riding the hook of the crane in the crane hall"
+@find factory-lantern 31 3 4 2 clue="In the roof lantern above the crane hall"
+
+; Time trials, all four declared here: rects are relative to this room and reach into the east
+; room (x 64-127). Gates are rows r-4 to r-1 over a walkway of top row r.
+@route factory-shift name="Shift Change" difficulty=1
+; from the stair tower mid landing down to the street, west over the boiler, up the crane hall
+; ladder to its low catwalk and down again, on to the street gate
+@start 122 40 1 4
+@checkpoint 88 48 1 4
+@checkpoint 35 46 1 4
+@finish 3 52 1 4
+@corridor -6 0 134 64
+@route factory-catwalks name="Catwalk Shift" difficulty=2
+; from the top of the big press east over the low line and up the stair tower
+@start 13 45 2 2
+@checkpoint 22 41 3 4
+@checkpoint 47 46 1 4
+@checkpoint 88 48 1 4
+@checkpoint 105 40 1 4
+@finish 120 34 1 4
+@corridor -2 0 130 64
+@route factory-crane name="Crane Line" difficulty=3
+; from the east end of the gallery west across the crane well, up to the high gate
+@start 122 28 1 4
+@checkpoint 75 28 1 4
+@checkpoint 53 28 1 4
+@checkpoint 34 28 1 4
+@checkpoint 8 21 1 4
+@finish 1 14 2 4
+@corridor -4 0 132 64
+@route factory-girder name="Girder and Shaft" difficulty=4
+; from the west end of the mid line up the staircase, the column, the riser and the light shaft
+@start 2 40 1 4
+@checkpoint 23 35 4 4
+@checkpoint 30 28 2 4
+@checkpoint 36 21 2 4
+@checkpoint 64 8 2 4
+@finish 72 -4 2 4
+@corridor -2 -8 130 72

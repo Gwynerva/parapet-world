@@ -1,0 +1,76 @@
+{
+  "format": 1,
+  "name": "Anvil",
+  "district": "factory",
+  "look": {
+    "hair": "hairRed",
+    "costume": "tee"
+  },
+  "start": {
+    "x": 140800,
+    "y": 83968,
+    "facing": 1
+  },
+  "runs": [
+    {
+      "steps": 6,
+      "held": 2
+    },
+    {
+      "steps": 18,
+      "held": 6
+    },
+    {
+      "steps": 2,
+      "held": 10
+    },
+    {
+      "steps": 17,
+      "held": 2
+    },
+    {
+      "steps": 12,
+      "held": 6
+    },
+    {
+      "steps": 7,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 12,
+      "held": 2
+    },
+    {
+      "steps": 1,
+      "held": 6
+    },
+    {
+      "steps": 24,
+      "held": 0
+    },
+    {
+      "steps": 50,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 9
+    },
+    {
+      "steps": 30,
+      "held": 1
+    },
+    {
+      "steps": 7,
+      "held": 2
+    },
+    {
+      "steps": 16,
+      "held": 0
+    }
+  ]
+}

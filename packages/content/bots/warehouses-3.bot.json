@@ -1,0 +1,832 @@
+{
+  "format": 1,
+  "name": "Stairs",
+  "district": "warehouses",
+  "look": {
+    "hair": "hairShort",
+    "costume": "classic"
+  },
+  "start": {
+    "x": 9728,
+    "y": 90112,
+    "facing": -1
+  },
+  "runs": [
+    {
+      "steps": 10,
+      "held": 0
+    },
+    {
+      "steps": 6,
+      "held": 1
+    },
+    {
+      "steps": 4,
+      "held": 0
+    },
+    {
+      "steps": 6,
+      "held": 1
+    },
+    {
+      "steps": 4,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 96,
+      "held": 4
+    },
+    {
+      "steps": 16,
+      "held": 0
+    },
+    {
+      "steps": 73,
+      "held": 2
+    },
+    {
+      "steps": 1,
+      "held": 6
+    },
+    {
+      "steps": 41,
+      "held": 2
+    },
+    {
+      "steps": 21,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 5,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 96,
+      "held": 4
+    },
+    {
+      "steps": 16,
+      "held": 0
+    },
+    {
+      "steps": 7,
+      "held": 1
+    },
+    {
+      "steps": 1,
+      "held": 5
+    },
+    {
+      "steps": 95,
+      "held": 1
+    },
+    {
+      "steps": 21,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 5,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 96,
+      "held": 4
+    },
+    {
+      "steps": 16,
+      "held": 0
+    },
+    {
+      "steps": 46,
+      "held": 2
+    },
+    {
+      "steps": 1,
+      "held": 6
+    },
+    {
+      "steps": 21,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 10
+    },
+    {
+      "steps": 19,
+      "held": 2
+    },
+    {
+      "steps": 1,
+      "held": 6
+    },
+    {
+      "steps": 15,
+      "held": 2
+    },
+    {
+      "steps": 21,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 5,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 96,
+      "held": 4
+    },
+    {
+      "steps": 16,
+      "held": 0
+    },
+    {
+      "steps": 74,
+      "held": 1
+    },
+    {
+      "steps": 1,
+      "held": 5
+    },
+    {
+      "steps": 26,
+      "held": 1
+    },
+    {
+      "steps": 21,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 5,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 96,
+      "held": 4
+    },
+    {
+      "steps": 16,
+      "held": 0
+    },
+    {
+      "steps": 13,
+      "held": 2
+    },
+    {
+      "steps": 1,
+      "held": 6
+    },
+    {
+      "steps": 16,
+      "held": 2
+    },
+    {
+      "steps": 1,
+      "held": 6
+    },
+    {
+      "steps": 111,
+      "held": 2
+    },
+    {
+      "steps": 21,
+      "held": 0
+    },
+    {
+      "steps": 15,
+      "held": 2
+    },
+    {
+      "steps": 37,
+      "held": 8
+    },
+    {
+      "steps": 19,
+      "held": 1
+    },
+    {
+      "steps": 21,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 5,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 18,
+      "held": 1
+    },
+    {
+      "steps": 37,
+      "held": 8
+    },
+    {
+      "steps": 19,
+      "held": 2
+    },
+    {
+      "steps": 21,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 5,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 18,
+      "held": 2
+    },
+    {
+      "steps": 37,
+      "held": 8
+    },
+    {
+      "steps": 19,
+      "held": 1
+    },
+    {
+      "steps": 21,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 5,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 18,
+      "held": 1
+    },
+    {
+      "steps": 37,
+      "held": 8
+    },
+    {
+      "steps": 4,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 18,
+      "held": 2
+    },
+    {
+      "steps": 37,
+      "held": 8
+    },
+    {
+      "steps": 46,
+      "held": 1
+    },
+    {
+      "steps": 1,
+      "held": 5
+    },
+    {
+      "steps": 83,
+      "held": 1
+    },
+    {
+      "steps": 1,
+      "held": 5
+    },
+    {
+      "steps": 13,
+      "held": 1
+    },
+    {
+      "steps": 14,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 5,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 20,
+      "held": 0
+    }
+  ]
+}

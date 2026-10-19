@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "name": "Grease",
+  "district": "factory",
+  "look": {
+    "hair": "hairShort",
+    "costume": "classic"
+  },
+  "start": {
+    "x": 159232,
+    "y": 83968,
+    "facing": 1
+  },
+  "runs": [
+    {
+      "steps": 20,
+      "held": 2
+    },
+    {
+      "steps": 40,
+      "held": 6
+    },
+    {
+      "steps": 15,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 20,
+      "held": 2
+    },
+    {
+      "steps": 20,
+      "held": 10
+    },
+    {
+      "steps": 6,
+      "held": 0
+    },
+    {
+      "steps": 26,
+      "held": 2
+    },
+    {
+      "steps": 18,
+      "held": 6
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 50,
+      "held": 6
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 32,
+      "held": 6
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 16,
+      "held": 0
+    },
+    {
+      "steps": 34,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 36,
+      "held": 1
+    },
+    {
+      "steps": 32,
+      "held": 5
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 5
+    },
+    {
+      "steps": 41,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 18,
+      "held": 1
+    },
+    {
+      "steps": 8,
+      "held": 9
+    },
+    {
+      "steps": 21,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 16,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 5
+    },
+    {
+      "steps": 44,
+      "held": 1
+    },
+    {
+      "steps": 7,
+      "held": 2
+    },
+    {
+      "steps": 16,
+      "held": 0
+    }
+  ]
+}

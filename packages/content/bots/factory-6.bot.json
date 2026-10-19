@@ -1,0 +1,88 @@
+{
+  "format": 1,
+  "name": "Spark",
+  "district": "factory",
+  "look": {
+    "hair": "hairRed",
+    "costume": "hoodie"
+  },
+  "start": {
+    "x": 185856,
+    "y": 65536,
+    "facing": 1
+  },
+  "runs": [
+    {
+      "steps": 19,
+      "held": 2
+    },
+    {
+      "steps": 62,
+      "held": 1
+    },
+    {
+      "steps": 95,
+      "held": 2
+    },
+    {
+      "steps": 4,
+      "held": 0
+    },
+    {
+      "steps": 6,
+      "held": 2
+    },
+    {
+      "steps": 11,
+      "held": 5
+    },
+    {
+      "steps": 1,
+      "held": 1
+    },
+    {
+      "steps": 6,
+      "held": 5
+    },
+    {
+      "steps": 1,
+      "held": 2
+    },
+    {
+      "steps": 19,
+      "held": 6
+    },
+    {
+      "steps": 1,
+      "held": 1
+    },
+    {
+      "steps": 4,
+      "held": 5
+    },
+    {
+      "steps": 1,
+      "held": 2
+    },
+    {
+      "steps": 118,
+      "held": 1
+    },
+    {
+      "steps": 16,
+      "held": 5
+    },
+    {
+      "steps": 1,
+      "held": 1
+    },
+    {
+      "steps": 7,
+      "held": 2
+    },
+    {
+      "steps": 16,
+      "held": 0
+    }
+  ]
+}

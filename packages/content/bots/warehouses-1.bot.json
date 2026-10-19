@@ -1,0 +1,184 @@
+{
+  "format": 1,
+  "name": "Brick",
+  "district": "warehouses",
+  "look": {
+    "hair": "hairShort",
+    "costume": "hoodie"
+  },
+  "start": {
+    "x": 59904,
+    "y": 90112,
+    "facing": -1
+  },
+  "runs": [
+    {
+      "steps": 10,
+      "held": 0
+    },
+    {
+      "steps": 23,
+      "held": 1
+    },
+    {
+      "steps": 1,
+      "held": 5
+    },
+    {
+      "steps": 32,
+      "held": 1
+    },
+    {
+      "steps": 1,
+      "held": 5
+    },
+    {
+      "steps": 119,
+      "held": 1
+    },
+    {
+      "steps": 1,
+      "held": 5
+    },
+    {
+      "steps": 83,
+      "held": 1
+    },
+    {
+      "steps": 1,
+      "held": 5
+    },
+    {
+      "steps": 40,
+      "held": 1
+    },
+    {
+      "steps": 36,
+      "held": 2
+    },
+    {
+      "steps": 1,
+      "held": 6
+    },
+    {
+      "steps": 87,
+      "held": 2
+    },
+    {
+      "steps": 1,
+      "held": 6
+    },
+    {
+      "steps": 83,
+      "held": 2
+    },
+    {
+      "steps": 1,
+      "held": 6
+    },
+    {
+      "steps": 32,
+      "held": 2
+    },
+    {
+      "steps": 1,
+      "held": 6
+    },
+    {
+      "steps": 64,
+      "held": 2
+    },
+    {
+      "steps": 21,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 5,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 17,
+      "held": 0
+    }
+  ]
+}

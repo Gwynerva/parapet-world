@@ -1,0 +1,120 @@
+{
+  "format": 1,
+  "name": "Rivet",
+  "district": "factory",
+  "look": {
+    "hair": "hairShort",
+    "costume": "hoodie"
+  },
+  "start": {
+    "x": 198144,
+    "y": 90112,
+    "facing": -1
+  },
+  "runs": [
+    {
+      "steps": 14,
+      "held": 1
+    },
+    {
+      "steps": 1,
+      "held": 5
+    },
+    {
+      "steps": 30,
+      "held": 1
+    },
+    {
+      "steps": 1,
+      "held": 5
+    },
+    {
+      "steps": 140,
+      "held": 1
+    },
+    {
+      "steps": 1,
+      "held": 5
+    },
+    {
+      "steps": 25,
+      "held": 1
+    },
+    {
+      "steps": 1,
+      "held": 5
+    },
+    {
+      "steps": 42,
+      "held": 1
+    },
+    {
+      "steps": 1,
+      "held": 5
+    },
+    {
+      "steps": 23,
+      "held": 1
+    },
+    {
+      "steps": 16,
+      "held": 0
+    },
+    {
+      "steps": 27,
+      "held": 2
+    },
+    {
+      "steps": 1,
+      "held": 6
+    },
+    {
+      "steps": 52,
+      "held": 2
+    },
+    {
+      "steps": 1,
+      "held": 6
+    },
+    {
+      "steps": 45,
+      "held": 2
+    },
+    {
+      "steps": 1,
+      "held": 6
+    },
+    {
+      "steps": 42,
+      "held": 2
+    },
+    {
+      "steps": 1,
+      "held": 6
+    },
+    {
+      "steps": 30,
+      "held": 2
+    },
+    {
+      "steps": 1,
+      "held": 6
+    },
+    {
+      "steps": 14,
+      "held": 2
+    },
+    {
+      "steps": 24,
+      "held": 0
+    },
+    {
+      "steps": 1,
+      "held": 1
+    },
+    {
+      "steps": 16,
+      "held": 0
+    }
+  ]
+}

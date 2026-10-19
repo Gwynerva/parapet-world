@@ -1,0 +1,72 @@
+{
+  "format": 1,
+  "name": "Hook",
+  "district": "factory",
+  "look": {
+    "hair": "hairRed",
+    "costume": "summer"
+  },
+  "start": {
+    "x": 165376,
+    "y": 77824,
+    "facing": 1
+  },
+  "runs": [
+    {
+      "steps": 32,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 12,
+      "held": 2
+    },
+    {
+      "steps": 54,
+      "held": 4
+    },
+    {
+      "steps": 1,
+      "held": 2
+    },
+    {
+      "steps": 16,
+      "held": 0
+    },
+    {
+      "steps": 20,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 14,
+      "held": 1
+    },
+    {
+      "steps": 58,
+      "held": 4
+    },
+    {
+      "steps": 7,
+      "held": 1
+    },
+    {
+      "steps": 24,
+      "held": 0
+    },
+    {
+      "steps": 1,
+      "held": 2
+    },
+    {
+      "steps": 16,
+      "held": 0
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "format": 1,
+  "name": "Crane",
+  "district": "factory",
+  "look": {
+    "hair": "hairRed",
+    "costume": "classic"
+  },
+  "start": {
+    "x": 169472,
+    "y": 51200,
+    "facing": -1
+  },
+  "runs": [
+    {
+      "steps": 2,
+      "held": 1
+    },
+    {
+      "steps": 24,
+      "held": 5
+    },
+    {
+      "steps": 6,
+      "held": 0
+    },
+    {
+      "steps": 14,
+      "held": 1
+    },
+    {
+      "steps": 22,
+      "held": 4
+    },
+    {
+      "steps": 1,
+      "held": 1
+    },
+    {
+      "steps": 16,
+      "held": 0
+    },
+    {
+      "steps": 46,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 12,
+      "held": 2
+    },
+    {
+      "steps": 22,
+      "held": 6
+    },
+    {
+      "steps": 2,
+      "held": 2
+    },
+    {
+      "steps": 8,
+      "held": 0
+    },
+    {
+      "steps": 16,
+      "held": 2
+    },
+    {
+      "steps": 10,
+      "held": 4
+    },
+    {
+      "steps": 40,
+      "held": 2
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 41,
+      "held": 2
+    },
+    {
+      "steps": 16,
+      "held": 0
+    },
+    {
+      "steps": 38,
+      "held": 1
+    },
+    {
+      "steps": 2,
+      "held": 0
+    },
+    {
+      "steps": 45,
+      "held": 1
+    },
+    {
+      "steps": 10,
+      "held": 4
+    },
+    {
+      "steps": 39,
+      "held": 1
+    },
+    {
+      "steps": 40,
+      "held": 0
+    }
+  ]
+}

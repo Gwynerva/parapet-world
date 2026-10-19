@@ -1,0 +1,43 @@
+; Rooftops over the warehouse yard: the fire escapes at x 64 and 111 (the gantry girder below
+; is the warehouses'), the east yard roof and the warehouse roof up to the factory.
+@district rooftops
+@pos 64 0
+@size 64 32
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.......................................................Hmmmmmmmm
+.......................................................Hmmmmmmmm
+.......................................................Hmmmmmmmm
+.......................................................Hmmmmmmmm
+.......................................................Hmmmmmmmm
+H..............................................Httttttttmmmmmmmm
+
+@prop ac.unit 58 25
+@prop vent.duct 61 25
+
+@region rooftops-yard 0 0 64 32 hub=rooftops

@@ -1,0 +1,73 @@
+; Rooftops, old town: the start roof (Parapet Roof hub), light wells, the brick tower with its
+; washing line, terraces down to the west yard roof. See ../../DESIGN.md.
+@district rooftops
+@pos 0 0
+@size 64 32
+
+.
+.
+.
+.
+bb
+bb
+bb
+bb
+bb
+bb
+##
+bb
+bb
+bb
+bb
+bb
+bb
+bb......................................HbbbbH
+##...........................-----------HbbbbH
+bb......................................HbbbbH
+bb####H.................................HbbbbH
+bb####H.................................HbbbbH
+bb####H.................................H####H
+bb####H............H##########H.........HbbbbH
+bbtttttttttttttttt.H##########H.........Hbbbb#######H
+bbbbbbbbbbbbbbbbbb.H##########H.Hbbbbbbbbbbbb#######H
+##bbbbbbbbbbbbbbbb.H##########H.Hbbbbbbbbbbbb#########H
+bbbbbbbbbbbbbbbbbb.HbbbbbbbbbbH.Hbbbbbbbb#############H
+bb################.H##########H.H########bbbbbbbbbbb####H
+bbbbbbbbbbbbbbbbbbtt##########H.Hbbbbbbbbbbbb###########H
+bbbbbbbbbbbbbbbbbb############tttbbbbbbbbbbbb###########H
+bbbbbbbbbbbbbbbbbb##bbbbbbbbbb###########bbbb###########tttttttt
+
+@prop water.tank 2 17
+@prop hub.sign.rooftops 12 22
+@prop ac.unit 21 22
+@prop skylight 24 22
+@prop chimney 28 21
+@prop billboard 46 21
+
+@region rooftops-old-town 0 0 64 32 hub=rooftops
+@hub rooftops 6 20 10 4 spawn=9,23 facing=1 name="Parapet Roof" start
+@route rooftops-chimney-pots name="Chimney Pots" difficulty=1
+@start 18 25 2 3
+@checkpoint 25 19 1 4
+@checkpoint 36 21 1 4
+@checkpoint 60 27 1 4
+@checkpoint 88 28 1 4
+@finish 134 21 1 4
+@corridor 2 0 136 34
+@route rooftops-washing-line name="Washing Line" difficulty=2
+@start 31 26 1 3
+@checkpoint 21 19 1 4
+@checkpoint 35 15 1 3
+@checkpoint 47 17 1 4
+@checkpoint 60 27 1 4
+@finish 42 13 1 4
+@corridor 2 0 62 32
+@route rooftops-skyline name="Skyline" difficulty=4
+@start 2 14 3 2
+@checkpoint 42 13 1 4
+@checkpoint 88 28 1 4
+@checkpoint 164 10 1 4
+@checkpoint 200 6 1 4
+@finish 250 0 3 4
+@corridor 2 0 252 34
+@find rooftops-washing-line 33 15 3 3 clue="Up on the washing line by the brick tower"

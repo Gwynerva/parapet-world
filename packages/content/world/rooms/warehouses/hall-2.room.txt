@@ -1,0 +1,92 @@
+; Warehouses, east: hall 2 with its racks, the street gate and the high gate to the factory.
+@district warehouses
+@pos 112 32
+@size 16 64
+
+wwwwwwwwwwwwwwww
+wwwwwwwwwwwwwwww
+ww.............w
+ww.............w
+ww.............w
+ww.............w
+ww......------.w
+ww.............w
+ww.............w
+ww.............w
+ww.............w
+ww.............w
+ww.............w
+ww.............w
+ww
+ww
+ww
+ww
+ww.....##H######
+ww.......H.....w
+ww.......H.....w
+ww.......H.....w
+ww.......H.....w
+ww.......H.....w
+ww.......H.....w
+ww.......H.....w
+ww.......H.....w
+ww.......H.....w
+ww.......H.....w
+ww.......H.....w
+ww.......H.....w
+ww.......H.....w
+ww.......H.....w
+ww.......H.....w
+ww.......H.....w
+ww.......H.....w
+ww.......H.....w
+ww.......H.....w
+ww========H====w
+ww........H....w
+ww........H....w
+ww........H....w
+ww........H....w
+ww........H....w
+ww........H....w
+ww........H....w
+ww........H....w
+ww........H....w
+ww........H....w
+ww........H....w
+ww........H
+ww........H
+..........H
+..........H
+..........H
+..........H
+################
+################
+################
+################
+################
+################
+################
+################
+
+@prop rack 2 53
+@prop rack 2 50
+@prop rack 2 47
+@prop rack 2 44
+@prop rack 2 41
+@prop rack 2 35
+@prop rack 2 32
+@prop rack 2 29
+@prop rack 2 26
+@prop rack 2 23
+@prop rack 2 20
+@prop rack 2 17
+@prop rack 2 14
+@prop rack 2 11
+@prop rack 2 8
+@prop rack 2 5
+@prop forklift 6 54
+@prop crate 12 37
+@prop crate 13 37
+
+@region warehouses-hall-2 hub=warehouses
+@find warehouses-rack-top 2 3 3 2 clue="On the highest shelf in hall 2"
