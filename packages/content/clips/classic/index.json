@@ -1,0 +1,1474 @@
+{
+ "format": 1,
+ "set": "classic",
+ "fps": 30,
+ "bones": [
+  "root",
+  "chest",
+  "head",
+  "uarmL",
+  "larmL",
+  "handL",
+  "uarmR",
+  "larmR",
+  "handR",
+  "ulegL",
+  "llegL",
+  "footL",
+  "ulegR",
+  "llegR",
+  "footR"
+ ],
+ "source": "Lifted from Parapet Classic keyframes (which come from Playman Extreme Running): a temporary stand-in, refused by the public-build check. See README.md.",
+ "units": "rig px; x forward, y up, z toward the viewer when facing right; root relative to the runner anchor (feet point, centre)",
+ "plant": "1 near foot (footL), 2 far foot (footR), 4 near hand (handL), 8 far hand (handR)",
+ "clips": [
+  {
+   "name": "idle",
+   "file": "idle.clip.json",
+   "loop": true,
+   "frames": 145,
+   "duration": 4.833,
+   "travel": [
+    0,
+    0
+   ],
+   "moves": [
+    "idle",
+    "frozen"
+   ],
+   "classic": {
+    "states": [],
+    "clip": 228,
+    "keyframes": 17,
+    "fps": 4,
+    "anchor": "feet"
+   },
+   "review": {
+    "date": "2026-10-18",
+    "rounds": 5,
+    "confirmed": true
+   }
+  },
+  {
+   "name": "stand",
+   "file": "stand.clip.json",
+   "loop": true,
+   "frames": 29,
+   "duration": 0.967,
+   "travel": [
+    0,
+    0
+   ],
+   "moves": [
+    "skid",
+    "respawn"
+   ],
+   "classic": {
+    "states": [
+     5
+    ],
+    "clip": 421,
+    "keyframes": 11,
+    "fps": 13,
+    "anchor": "feet"
+   },
+   "review": {
+    "date": "2026-10-18",
+    "rounds": 5,
+    "confirmed": true
+   },
+   "note": "Classic STOP, the standing loop."
+  },
+  {
+   "name": "start",
+   "file": "start.clip.json",
+   "loop": false,
+   "frames": 32,
+   "duration": 1.067,
+   "travel": [
+    2.1,
+    1.9
+   ],
+   "moves": [
+    "start"
+   ],
+   "classic": {
+    "states": [
+     0
+    ],
+    "clip": 399,
+    "keyframes": 10,
+    "fps": 11.1,
+    "anchor": "feet"
+   },
+   "review": {
+    "date": "2026-10-18",
+    "rounds": 5,
+    "confirmed": true
+   }
+  },
+  {
+   "name": "run",
+   "file": "run.clip.json",
+   "loop": true,
+   "frames": 19,
+   "duration": 0.633,
+   "travel": [
+    0,
+    0
+   ],
+   "moves": [
+    "run",
+    "coast"
+   ],
+   "classic": {
+    "states": [
+     2
+    ],
+    "clip": 277,
+    "keyframes": 8,
+    "fps": 14.2,
+    "anchor": "feet"
+   },
+   "review": {
+    "date": "2026-10-18",
+    "rounds": 5,
+    "confirmed": true
+   }
+  },
+  {
+   "name": "runDownhill",
+   "file": "runDownhill.clip.json",
+   "loop": true,
+   "frames": 14,
+   "duration": 0.467,
+   "travel": [
+    0,
+    0
+   ],
+   "moves": [
+    "runDownhill"
+   ],
+   "classic": {
+    "states": [
+     3
+    ],
+    "clip": 56,
+    "keyframes": 6,
+    "fps": 14.2,
+    "anchor": "feet"
+   },
+   "review": {
+    "date": "2026-10-18",
+    "rounds": 5,
+    "confirmed": true
+   }
+  },
+  {
+   "name": "runUphill",
+   "file": "runUphill.clip.json",
+   "loop": true,
+   "frames": 19,
+   "duration": 0.633,
+   "travel": [
+    0,
+    0
+   ],
+   "moves": [
+    "runUphill"
+   ],
+   "classic": {
+    "states": [
+     4
+    ],
+    "clip": 514,
+    "keyframes": 8,
+    "fps": 14.2,
+    "anchor": "feet"
+   },
+   "review": {
+    "date": "2026-10-18",
+    "rounds": 5,
+    "confirmed": true
+   }
+  },
+  {
+   "name": "turn",
+   "file": "turn.clip.json",
+   "loop": false,
+   "frames": 21,
+   "duration": 0.7,
+   "travel": [
+    0.3,
+    -0.19
+   ],
+   "moves": [
+    "turn",
+    "turnFlip"
+   ],
+   "classic": {
+    "states": [
+     6
+    ],
+    "clip": 471,
+    "keyframes": 9,
+    "fps": 15,
+    "anchor": "feet"
+   },
+   "review": {
+    "date": "2026-10-18",
+    "rounds": 5,
+    "confirmed": true
+   }
+  },
+  {
+   "name": "turnFast",
+   "file": "turnFast.clip.json",
+   "loop": false,
+   "frames": 14,
+   "duration": 0.467,
+   "travel": [
+    5.3,
+    0.28
+   ],
+   "moves": [
+    "turnFast"
+   ],
+   "classic": {
+    "states": [
+     8
+    ],
+    "clip": 458,
+    "keyframes": 10,
+    "fps": 25.6,
+    "anchor": "feet"
+   },
+   "review": {
+    "date": "2026-10-18",
+    "rounds": 5,
+    "confirmed": true
+   }
+  },
+  {
+   "name": "jump",
+   "file": "jump.clip.json",
+   "loop": false,
+   "frames": 21,
+   "duration": 0.7,
+   "travel": [
+    -14,
+    -8.01
+   ],
+   "moves": [
+    "jump"
+   ],
+   "classic": {
+    "states": [
+     18
+    ],
+    "clip": 203,
+    "keyframes": 6,
+    "fps": 10,
+    "anchor": "feet"
+   },
+   "review": {
+    "date": "2026-10-18",
+    "rounds": 5,
+    "confirmed": true
+   }
+  },
+  {
+   "name": "fall",
+   "file": "fall.clip.json",
+   "loop": true,
+   "frames": 24,
+   "duration": 0.8,
+   "travel": [
+    0,
+    0
+   ],
+   "moves": [
+    "dropDown",
+    "fall",
+    "ladderLeave",
+    "letGo"
+   ],
+   "classic": {
+    "states": [
+     15
+    ],
+    "clip": 246,
+    "keyframes": 7,
+    "fps": 10,
+    "anchor": "feet"
+   },
+   "review": {
+    "date": "2026-10-18",
+    "rounds": 5,
+    "confirmed": true
+   }
+  },
+  {
+   "name": "landingPrepare",
+   "file": "landingPrepare.clip.json",
+   "loop": false,
+   "frames": 8,
+   "duration": 0.267,
+   "travel": [
+    4,
+    3.08
+   ],
+   "moves": [],
+   "classic": {
+    "states": [
+     22
+    ],
+    "clip": 324,
+    "keyframes": 2,
+    "fps": 9.5,
+    "anchor": "feet"
+   },
+   "review": {
+    "date": "2026-10-18",
+    "rounds": 5,
+    "confirmed": true
+   },
+   "note": "DOWN while falling (Classic 22): the tuck before a hard landing; no MVP move of its own."
+  },
+  {
+   "name": "landing",
+   "file": "landing.clip.json",
+   "loop": false,
+   "frames": 8,
+   "duration": 0.267,
+   "travel": [
+    -1,
+    -4.93
+   ],
+   "moves": [
+    "landSoft",
+    "landHard"
+   ],
+   "classic": {
+    "states": [
+     25
+    ],
+    "clip": 327,
+    "keyframes": 2,
+    "fps": 9.5,
+    "anchor": "feet"
+   },
+   "review": {
+    "date": "2026-10-18",
+    "rounds": 5,
+    "confirmed": true
+   }
+  },
+  {
+   "name": "roll",
+   "file": "roll.clip.json",
+   "loop": false,
+   "frames": 30,
+   "duration": 1,
+   "travel": [
+    -1.1,
+    1.77
+   ],
+   "moves": [
+    "roll",
+    "slideUnder"
+   ],
+   "classic": {
+    "states": [
+     21
+    ],
+    "clip": 382,
+    "keyframes": 11,
+    "fps": 12.9,
+    "anchor": "feet"
+   },
+   "review": {
+    "date": "2026-10-18",
+    "rounds": 5,
+    "confirmed": true
+   }
+  },
+  {
+   "name": "frontFlip",
+   "file": "frontFlip.clip.json",
+   "loop": false,
+   "frames": 23,
+   "duration": 0.767,
+   "travel": [
+    -0.1,
+    -2.89
+   ],
+   "moves": [
+    "frontFlip"
+   ],
+   "classic": {
+    "states": [
+     63
+    ],
+    "clip": 63,
+    "keyframes": 9,
+    "fps": 14.1,
+    "anchor": "feet"
+   },
+   "review": {
+    "date": "2026-10-18",
+    "rounds": 5,
+    "confirmed": true
+   }
+  },
+  {
+   "name": "backFlip",
+   "file": "backFlip.clip.json",
+   "loop": false,
+   "frames": 27,
+   "duration": 0.9,
+   "travel": [
+    0.1,
+    -0.17
+   ],
+   "moves": [
+    "backFlip"
+   ],
+   "classic": {
+    "states": [
+     64
+    ],
+    "clip": 374,
+    "keyframes": 7,
+    "fps": 9.3,
+    "anchor": "feet"
+   },
+   "review": {
+    "date": "2026-10-18",
+    "rounds": 5,
+    "confirmed": true
+   }
+  },
+  {
+   "name": "stumble",
+   "file": "stumble.clip.json",
+   "loop": false,
+   "frames": 29,
+   "duration": 0.967,
+   "travel": [
+    0.4,
+    1.2
+   ],
+   "moves": [
+    "stumble",
+    "trip"
+   ],
+   "classic": {
+    "states": [
+     82
+    ],
+    "clip": 410,
+    "keyframes": 10,
+    "fps": 12.3,
+    "anchor": "feet"
+   },
+   "review": {
+    "date": "2026-10-18",
+    "rounds": 5,
+    "confirmed": true
+   }
+  },
+  {
+   "name": "crash",
+   "file": "crash.clip.json",
+   "loop": false,
+   "frames": 21,
+   "duration": 0.7,
+   "travel": [
+    14.7,
+    -26.3
+   ],
+   "moves": [
+    "crash"
+   ],
+   "classic": {
+    "states": [
+     84
+    ],
+    "clip": 73,
+    "keyframes": 6,
+    "fps": 0,
+    "anchor": "hands"
+   },
+   "review": {
+    "date": "2026-10-18",
+    "rounds": 5,
+    "confirmed": true
+   }
+  },
+  {
+   "name": "crashFall",
+   "file": "crashFall.clip.json",
+   "loop": false,
+   "frames": 18,
+   "duration": 0.6,
+   "travel": [
+    14.7,
+    -26.3
+   ],
+   "moves": [
+    "crashFall"
+   ],
+   "classic": {
+    "states": [
+     86
+    ],
+    "clip": 73,
+    "keyframes": 6,
+    "fps": 11.8,
+    "anchor": "hands"
+   },
+   "review": {
+    "date": "2026-10-18",
+    "rounds": 5,
+    "confirmed": true
+   }
+  },
+  {
+   "name": "crashDown",
+   "file": "crashDown.clip.json",
+   "loop": false,
+   "frames": 14,
+   "duration": 0.467,
+   "travel": [
+    3,
+    -0.29
+   ],
+   "moves": [
+    "crashDown",
+    "dead"
+   ],
+   "classic": {
+    "states": [
+     89
+    ],
+    "clip": 80,
+    "keyframes": 4,
+    "fps": 10.3,
+    "anchor": "feet"
+   },
+   "review": {
+    "date": "2026-10-18",
+    "rounds": 5,
+    "confirmed": true
+   },
+   "note": "dead holds its last frame."
+  },
+  {
+   "name": "getUp",
+   "file": "getUp.clip.json",
+   "loop": false,
+   "frames": 35,
+   "duration": 1.167,
+   "travel": [
+    -19.6,
+    19.86
+   ],
+   "moves": [
+    "getUp"
+   ],
+   "classic": {
+    "states": [
+     92
+    ],
+    "clip": 85,
+    "keyframes": 16,
+    "fps": 16.2,
+    "anchor": "feet"
+   },
+   "review": {
+    "date": "2026-10-18",
+    "rounds": 5,
+    "confirmed": true
+   }
+  },
+  {
+   "name": "wallRun",
+   "file": "wallRun.clip.json",
+   "loop": true,
+   "frames": 31,
+   "duration": 1.033,
+   "travel": [
+    0,
+    0
+   ],
+   "moves": [
+    "wallRun"
+   ],
+   "classic": {
+    "states": [
+     33
+    ],
+    "clip": 528,
+    "keyframes": 9,
+    "fps": 10,
+    "anchor": "feet"
+   },
+   "review": {
+    "date": "2026-10-18",
+    "rounds": 5,
+    "confirmed": true
+   }
+  },
+  {
+   "name": "wallRunKick",
+   "file": "wallRunKick.clip.json",
+   "loop": true,
+   "frames": 14,
+   "duration": 0.467,
+   "travel": [
+    0,
+    0
+   ],
+   "moves": [
+    "wallRunTop",
+    "ticTac"
+   ],
+   "classic": {
+    "states": [
+     36
+    ],
+    "clip": 523,
+    "keyframes": 4,
+    "fps": 10,
+    "anchor": "feet"
+   },
+   "review": {
+    "date": "2026-10-18",
+    "rounds": 5,
+    "confirmed": true
+   }
+  },
+  {
+   "name": "ledgeGrab",
+   "file": "ledgeGrab.clip.json",
+   "loop": false,
+   "frames": 18,
+   "duration": 0.6,
+   "travel": [
+    -9.54,
+    5.9
+   ],
+   "moves": [
+    "ledgeGrab"
+   ],
+   "classic": {
+    "states": [
+     99,
+     100,
+     110
+    ],
+    "clip": 168,
+    "keyframes": 9,
+    "fps": 17.6,
+    "anchor": "hands"
+   },
+   "review": {
+    "date": "2026-10-19",
+    "rounds": 3
+   },
+   "grip": [
+    0,
+    48
+   ],
+   "terrain": {
+    "face": 1,
+    "top": 48
+   }
+  },
+  {
+   "name": "ledgeHang",
+   "file": "ledgeHang.clip.json",
+   "loop": true,
+   "frames": 1,
+   "duration": 0.033,
+   "travel": [
+    0,
+    0
+   ],
+   "moves": [
+    "ledgeHang"
+   ],
+   "classic": {
+    "states": [
+     112,
+     113
+    ],
+    "clip": 168,
+    "keyframes": 1,
+    "fps": 13,
+    "anchor": "hands"
+   },
+   "review": {
+    "date": "2026-10-19",
+    "rounds": 3
+   },
+   "grip": [
+    0.2,
+    48.3
+   ],
+   "terrain": {
+    "face": 1,
+    "top": 48
+   }
+  },
+  {
+   "name": "ledgeClimb",
+   "file": "ledgeClimb.clip.json",
+   "loop": false,
+   "frames": 27,
+   "duration": 0.9,
+   "travel": [
+    10.5,
+    28.47
+   ],
+   "moves": [
+    "ledgeClimb"
+   ],
+   "classic": {
+    "states": [
+     115
+    ],
+    "clip": 30,
+    "keyframes": 7,
+    "fps": 9.3,
+    "anchor": "hands"
+   },
+   "review": {
+    "date": "2026-10-19",
+    "rounds": 3
+   },
+   "note": "Classic 115, the pull-up: the hands stay pinned on the corner while the body rises 48 px and moves 16 px forward, ending crouched on the top.",
+   "grip": [
+    -0.1,
+    49
+   ],
+   "terrain": {
+    "face": 1,
+    "top": 48
+   },
+   "anchorShift": [
+    16,
+    48
+   ]
+  },
+  {
+   "name": "ledgeClimbEnd",
+   "file": "ledgeClimbEnd.clip.json",
+   "loop": false,
+   "frames": 32,
+   "duration": 1.067,
+   "travel": [
+    10.4,
+    3.65
+   ],
+   "moves": [],
+   "classic": {
+    "states": [
+     116
+    ],
+    "clip": 21,
+    "keyframes": 8,
+    "fps": 8.9,
+    "anchor": "feet"
+   },
+   "review": {
+    "date": "2026-10-19",
+    "rounds": 5
+   },
+   "note": "Classic 116, standing up from the pull-up into the run, drawn from the new anchor on the top. The World goes from ledgeClimb to idle or start instead; spare."
+  },
+  {
+   "name": "ledgeJumpBack",
+   "file": "ledgeJumpBack.clip.json",
+   "loop": false,
+   "frames": 11,
+   "duration": 0.367,
+   "travel": [
+    19.4,
+    15
+   ],
+   "moves": [
+    "ledgeJumpBack"
+   ],
+   "classic": {
+    "states": [
+     117
+    ],
+    "clip": 286,
+    "keyframes": 8,
+    "fps": 26.7,
+    "anchor": "feet"
+   },
+   "review": {
+    "date": "2026-10-19",
+    "rounds": 6
+   },
+   "terrain": "none"
+  },
+  {
+   "name": "ladderClimb",
+   "file": "ladderClimb.clip.json",
+   "loop": true,
+   "frames": 21,
+   "duration": 0.7,
+   "travel": [
+    0,
+    0
+   ],
+   "moves": [
+    "ladderClimb"
+   ],
+   "classic": {
+    "states": [
+     118,
+     119
+    ],
+    "clip": 219,
+    "keyframes": 8,
+    "fps": 13,
+    "anchor": "hands"
+   },
+   "review": {
+    "date": "2026-10-19",
+    "rounds": 2
+   },
+   "grip": [
+    2.5,
+    45.4
+   ],
+   "terrain": {
+    "face": 5.5,
+    "top": 999
+   },
+   "prop": {
+    "ladder": 2.5
+   }
+  },
+  {
+   "name": "ladderEnter",
+   "file": "ladderEnter.clip.json",
+   "loop": false,
+   "frames": 1,
+   "duration": 0.033,
+   "travel": [
+    0,
+    0
+   ],
+   "moves": [
+    "ladderEnter"
+   ],
+   "classic": {
+    "states": [
+     118
+    ],
+    "clip": 219,
+    "keyframes": 1,
+    "fps": 0,
+    "anchor": "hands"
+   },
+   "review": {
+    "date": "2026-10-19",
+    "rounds": 2
+   },
+   "grip": [
+    2.4,
+    47
+   ],
+   "terrain": {
+    "face": 5.5,
+    "top": 999
+   },
+   "prop": {
+    "ladder": 2.5
+   }
+  },
+  {
+   "name": "ladderSlide",
+   "file": "ladderSlide.clip.json",
+   "loop": true,
+   "frames": 11,
+   "duration": 0.367,
+   "travel": [
+    0,
+    0
+   ],
+   "moves": [
+    "ladderSlide"
+   ],
+   "classic": {
+    "states": [
+     120
+    ],
+    "clip": 394,
+    "keyframes": 4,
+    "fps": 13,
+    "anchor": "hands"
+   },
+   "review": {
+    "date": "2026-10-19",
+    "rounds": 5
+   },
+   "grip": [
+    2.4,
+    48.2
+   ],
+   "terrain": {
+    "face": 5.5,
+    "top": 999
+   },
+   "prop": {
+    "ladder": 2.5
+   }
+  },
+  {
+   "name": "poleJump",
+   "file": "poleJump.clip.json",
+   "loop": false,
+   "frames": 21,
+   "duration": 0.7,
+   "travel": [
+    16.02,
+    13
+   ],
+   "moves": [
+    "poleJump"
+   ],
+   "classic": {
+    "states": [
+     123
+    ],
+    "clip": 297,
+    "keyframes": 9,
+    "fps": 15,
+    "anchor": "feet"
+   },
+   "review": {
+    "date": "2026-10-19",
+    "rounds": 8
+   },
+   "grip": [
+    -1.6,
+    24.7
+   ],
+   "terrain": "none",
+   "pole": -1.5
+  },
+  {
+   "name": "poleSpin",
+   "file": "poleSpin.clip.json",
+   "loop": false,
+   "frames": 14,
+   "duration": 0.467,
+   "travel": [
+    -15.4,
+    3
+   ],
+   "moves": [
+    "poleSpin"
+   ],
+   "classic": {
+    "states": [
+     125
+    ],
+    "clip": 309,
+    "keyframes": 14,
+    "fps": 35.9,
+    "anchor": "feet"
+   },
+   "review": {
+    "date": "2026-10-19",
+    "rounds": 1
+   },
+   "grip": [
+    0.7,
+    38.2
+   ],
+   "terrain": "none",
+   "pole": 0.3
+  },
+  {
+   "name": "poleSlide",
+   "file": "poleSlide.clip.json",
+   "loop": false,
+   "frames": 1,
+   "duration": 0.033,
+   "travel": [
+    0,
+    0
+   ],
+   "moves": [
+    "poleSlide"
+   ],
+   "classic": {
+    "states": [
+     127
+    ],
+    "clip": 307,
+    "keyframes": 1,
+    "fps": 0,
+    "anchor": "feet"
+   },
+   "review": {
+    "date": "2026-10-19",
+    "rounds": 1
+   },
+   "grip": [
+    -1.5,
+    38
+   ],
+   "terrain": "none",
+   "pole": -1.1
+  },
+  {
+   "name": "barSwing",
+   "file": "barSwing.clip.json",
+   "loop": true,
+   "frames": 37,
+   "duration": 1.233,
+   "travel": [
+    0,
+    0
+   ],
+   "moves": [
+    "barSwing"
+   ],
+   "classic": {
+    "states": [
+     132,
+     133
+    ],
+    "clip": 347,
+    "keyframes": 14,
+    "fps": 13,
+    "anchor": "hands"
+   },
+   "review": {
+    "date": "2026-10-19",
+    "rounds": 7
+   },
+   "grip": [
+    -1,
+    49.3
+   ],
+   "terrain": "none",
+   "prop": {
+    "bar": 49.5
+   }
+  },
+  {
+   "name": "barGrab",
+   "file": "barGrab.clip.json",
+   "loop": false,
+   "frames": 1,
+   "duration": 0.033,
+   "travel": [
+    0,
+    0
+   ],
+   "moves": [
+    "barGrab"
+   ],
+   "classic": {
+    "states": [
+     132
+    ],
+    "clip": 347,
+    "keyframes": 1,
+    "fps": 0,
+    "anchor": "hands"
+   },
+   "review": {
+    "date": "2026-10-19",
+    "rounds": 4,
+    "note": "barSwing's first frame (poseOf); re-reviewed each time barSwing changed"
+   },
+   "grip": [
+    -1.2,
+    49.3
+   ],
+   "terrain": "none",
+   "prop": {
+    "bar": 49.5
+   }
+  },
+  {
+   "name": "vault",
+   "file": "vault.clip.json",
+   "loop": false,
+   "frames": 32,
+   "duration": 1.067,
+   "travel": [
+    47.96,
+    31.06
+   ],
+   "moves": [
+    "vault"
+   ],
+   "classic": {
+    "states": [
+     42,
+     43,
+     44,
+     45
+    ],
+    "clip": 210,
+    "keyframes": 8,
+    "fps": 8.8,
+    "anchor": "hands"
+   },
+   "review": {
+    "date": "2026-10-19",
+    "rounds": 9,
+    "note": "rounds 1-3 under the name stepOver (Classic's step-over), renamed to vault for the move table"
+   },
+   "note": "Classic 42-45, its step-over: hands on the top corner of a one-tile wall, up onto it and on (the hands stay pinned on the top while the body moves 32 px forward and 32 px up).",
+   "grip": [
+    14.2,
+    35.6
+   ],
+   "terrain": {
+    "face": -4,
+    "top": 32,
+    "floor": true
+   },
+   "anchorShift": [
+    32,
+    32
+   ]
+  },
+  {
+   "name": "tigerJump",
+   "file": "tigerJump.clip.json",
+   "loop": false,
+   "frames": 18,
+   "duration": 0.6,
+   "travel": [
+    35.35,
+    -3.47
+   ],
+   "moves": [
+    "tigerJump"
+   ],
+   "classic": {
+    "states": [
+     56
+    ],
+    "clip": 433,
+    "keyframes": 5,
+    "fps": 9.8,
+    "anchor": "hands"
+   },
+   "review": {
+    "date": "2026-10-19",
+    "rounds": 1
+   },
+   "note": "Classic TIGER_JUMP 56 (FWD again while running fast): arms swing forward and the runner dives into a long low leap. Classic goes on with tigerJumpOver and tigerJumpLand; the World lands into roll.",
+   "terrain": "none"
+  },
+  {
+   "name": "tigerJumpOver",
+   "file": "tigerJumpOver.clip.json",
+   "loop": false,
+   "frames": 14,
+   "duration": 0.467,
+   "travel": [
+    -3.2,
+    -38.17
+   ],
+   "moves": [],
+   "classic": {
+    "states": [
+     58
+    ],
+    "clip": 439,
+    "keyframes": 3,
+    "fps": 7.7,
+    "anchor": "hands"
+   },
+   "review": {
+    "date": "2026-10-19",
+    "rounds": 1
+   },
+   "note": "Classic 58, the dive over the obstacle (head down, hands reaching for the ground): the rest of Classic's tiger jump, spare.",
+   "terrain": "none"
+  },
+  {
+   "name": "monkeyVault",
+   "file": "monkeyVault.clip.json",
+   "loop": false,
+   "frames": 18,
+   "duration": 0.6,
+   "travel": [
+    0.6,
+    5.7
+   ],
+   "moves": [
+    "monkeyVault"
+   ],
+   "classic": {
+    "states": [
+     62
+    ],
+    "clip": 254,
+    "keyframes": 7,
+    "fps": 13.7,
+    "anchor": "feet"
+   },
+   "review": {
+    "date": "2026-10-19",
+    "rounds": 1
+   }
+  },
+  {
+   "name": "wallFlip",
+   "file": "wallFlip.clip.json",
+   "loop": false,
+   "frames": 27,
+   "duration": 0.9,
+   "travel": [
+    4.6,
+    -5.4
+   ],
+   "moves": [
+    "wallFlip"
+   ],
+   "classic": {
+    "states": [
+     48
+    ],
+    "clip": 577,
+    "keyframes": 9,
+    "fps": 12,
+    "anchor": "feet"
+   },
+   "review": {
+    "date": "2026-10-19",
+    "rounds": 1
+   },
+   "terrain": "none"
+  },
+  {
+   "name": "skid",
+   "file": "skid.clip.json",
+   "loop": false,
+   "frames": 14,
+   "duration": 0.467,
+   "travel": [
+    -1.1,
+    -0.75
+   ],
+   "moves": [],
+   "classic": {
+    "states": [
+     38
+    ],
+    "clip": 551,
+    "keyframes": 3,
+    "fps": 7.7,
+    "anchor": "feet"
+   },
+   "review": {
+    "date": "2026-10-19",
+    "rounds": 1
+   },
+   "note": "Classic 38, braking steps before a wall. The World's skid plays stand; spare."
+  },
+  {
+   "name": "ticTac",
+   "file": "ticTac.clip.json",
+   "loop": false,
+   "frames": 22,
+   "duration": 0.733,
+   "travel": [
+    -32.5,
+    0
+   ],
+   "moves": [],
+   "classic": {
+    "states": [
+     29,
+     20
+    ],
+    "clip": 555,
+    "keyframes": 8,
+    "fps": 13.3,
+    "anchor": "feet"
+   },
+   "review": {
+    "date": "2026-10-19",
+    "rounds": 4
+   },
+   "terrain": "none"
+  },
+  {
+   "name": "stepOver",
+   "file": "stepOver.clip.json",
+   "loop": false,
+   "frames": 7,
+   "duration": 0.233,
+   "travel": [
+    -6.59,
+    -4.37
+   ],
+   "moves": [
+    "stepOver"
+   ],
+   "review": {
+    "date": "2026-10-19",
+    "rounds": 2,
+    "derived": true
+   },
+   "derived": {
+    "from": "jump",
+    "frames": [
+     2,
+     8
+    ]
+   },
+   "note": "A knee-high obstacle taken in stride: the leaping stride of the approved jump (from the push-off of the rear foot to before the landing prep). Classic has no stride over a low obstacle; its step-over (clip 210) climbs onto a one-tile wall with the hands and is exported as vault."
+  },
+  {
+   "name": "ledgeDrop",
+   "file": "ledgeDrop.clip.json",
+   "loop": false,
+   "frames": 18,
+   "duration": 0.6,
+   "travel": [
+    9.54,
+    -5.9
+   ],
+   "moves": [
+    "ledgeDrop"
+   ],
+   "review": {
+    "date": "2026-10-19",
+    "rounds": 1,
+    "derived": true
+   },
+   "derived": {
+    "from": "ledgeGrab",
+    "reverse": true
+   },
+   "note": "Letting go of the ledge: the approved grab played backwards, as Classic's state 111 plays clip 168 reversed (mode 7) before the drop into the fall (Classic 27 plays the fall loop).",
+   "grip": [
+    0,
+    48
+   ],
+   "terrain": {
+    "face": 1,
+    "top": 48
+   }
+  },
+  {
+   "name": "ladderTop",
+   "file": "ladderTop.clip.json",
+   "loop": false,
+   "frames": 27,
+   "duration": 0.9,
+   "travel": [
+    10.5,
+    28.47
+   ],
+   "moves": [
+    "ladderTop"
+   ],
+   "review": {
+    "date": "2026-10-19",
+    "rounds": 3,
+    "derived": true
+   },
+   "derived": {
+    "from": "ledgeClimb"
+   },
+   "note": "Off the top of a ladder onto the floor: Classic reaches the top of a ladder through the ledge hang (108 -> 112) and climbs out with the pull-up (115), so this is the approved ledgeClimb. Like ledgeClimb it ends crouched on the top: chain ledgeClimbEnd (Classic 116, the stand-up into the run) or start after it rather than fading straight into idle.",
+   "grip": [
+    -0.1,
+    49
+   ],
+   "terrain": {
+    "face": 1,
+    "top": 48
+   },
+   "anchorShift": [
+    16,
+    48
+   ]
+  },
+  {
+   "name": "poleGrab",
+   "file": "poleGrab.clip.json",
+   "loop": false,
+   "frames": 1,
+   "duration": 0.033,
+   "travel": [
+    0,
+    0
+   ],
+   "moves": [
+    "poleGrab"
+   ],
+   "review": {
+    "date": "2026-10-19",
+    "rounds": 1,
+    "derived": true
+   },
+   "derived": {
+    "from": "poleSlide"
+   },
+   "note": "Grabbing a pole: Classic has no grab clip of its own (122/124/126 wait for the hands to touch it); the held slide pose is the grab.",
+   "grip": [
+    -1.5,
+    38
+   ],
+   "terrain": "none",
+   "pole": -1.1
+  },
+  {
+   "name": "barJump",
+   "file": "barJump.clip.json",
+   "loop": false,
+   "frames": 6,
+   "duration": 0.2,
+   "travel": [
+    1.07,
+    -1.6
+   ],
+   "moves": [
+    "barJump"
+   ],
+   "review": {
+    "date": "2026-10-19",
+    "rounds": 5,
+    "derived": true
+   },
+   "derived": {
+    "from": "poleJump",
+    "frames": [
+     15,
+     20
+    ],
+    "rootZ": 12,
+    "prop": {
+     "bar": 49.5
+    }
+   },
+   "note": "Jumping off the overhead bar: Classic has none (DOWN on the bar drops into the fall). The release of the pole jump: arms flung overhead, the body rising, ending upright, the body 12 px in front of the bar's plane so the head and the far arm pass in front of it.",
+   "terrain": "none",
+   "prop": {
+    "bar": 49.5
+   }
+  }
+ ]
+}
