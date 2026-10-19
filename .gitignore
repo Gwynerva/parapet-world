@@ -7,3 +7,5 @@ Thumbs.db
 data/
 # previews written by tools
 packages/tools/out/
+# local captures and scratch output
+tmp/

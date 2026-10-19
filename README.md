@@ -11,6 +11,23 @@ trials, 16 hidden finds and four costumes. [`VISION.md`](VISION.md) collects the
 [`LESSONS-FROM-CLASSIC.md`](LESSONS-FROM-CLASSIC.md) records what to learn from the remake that
 came first.
 
+![The rooftops at dusk](docs/media/rooftops-billboard.png)
+
+<p>
+  <img src="docs/media/run-rooftops.gif" width="49%" alt="A time trial along the crane girders on the rooftops">
+  <img src="docs/media/run-warehouses.gif" width="49%" alt="A time trial through the warehouse racks">
+</p>
+
+<p>
+  <img src="docs/media/rooftops-dive.png" width="32%" alt="A dive over a water tank, a bot climbing below">
+  <img src="docs/media/factory-floor.png" width="32%" alt="The factory floor with its light shafts">
+  <img src="docs/media/sewer-arches.png" width="32%" alt="The sewer's brick arches">
+</p>
+
+The flat tile city is drawn as a shallow slab in perspective, the runners are low-poly 3D over
+pixel art, and everyone else in view is a bot simulated exactly like a player. Captured from the
+game at 1920 x 1080 with the scripted lines the route checks find.
+
 ## Running it
 
 Node 24 or later.
