@@ -1,0 +1,20 @@
+{
+  "id": "warehouses",
+  "name": "Warehouses",
+  "sky": [26, 30, 52],
+  "background": [
+    {
+      "file": "bg-0.png",
+      "factor": 0.1,
+      "y": 60,
+      "repeatX": true
+    },
+    {
+      "file": "bg-1.png",
+      "factor": 0.3,
+      "y": 537,
+      "repeatX": true
+    }
+  ],
+  "ambience": "warehouses.yard"
+}

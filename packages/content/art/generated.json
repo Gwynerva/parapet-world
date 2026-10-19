@@ -1,0 +1,20 @@
+{
+  "comment": "SHA-256 of every PNG the art generator wrote. A PNG whose bytes differ was repainted by hand and is kept; node packages/tools/src/art/main.ts --force overwrites it.",
+  "files": {
+    "factory/bg-0.png": "464049facd7fa188ca7b84e2c1830fc1ec43a93037a72e08e5dd59d6b84a6ae3",
+    "factory/bg-1.png": "069714941c19d6721498308474a42912ed1111852e00c2dc0a56874f2694339b",
+    "factory/bg-2.png": "9e41a3a5afbbd6385f3731fcbaa24c7fd577e62fb11ea041967454423c9bc83f",
+    "factory/tiles.png": "f02d56c8e70331275bffcd8265e2c736a5ec7ecf6608099767099f933ed9fb16",
+    "props.png": "33bec2aca304f1ab6b3e32664803b94d73af4fa861266c20983f78eb70e75957",
+    "rooftops/bg-0.png": "2787af5abf05edbf51989e5a88d9f6d9cf1a7367bfb054b8f6b6d690ece7a4e3",
+    "rooftops/bg-1.png": "76f7a8a04623bde18fb4a66248a83180ad9423cb47c3e4661d398abfbe4154d0",
+    "rooftops/bg-2.png": "494e98fd3e9ae8ab9b447bca53005bc0d436b8a6a16a7e6ae5f475978a7ad9ef",
+    "rooftops/tiles.png": "396e90f78085ca34c4aa5680724f945bbbc01d4ebc9990b8e9c592ad1cf5b45c",
+    "sewer/bg-0.png": "5b84f240c81c2c14eaac3d6b187fc7d164b4011f1ea9f104db74ae5f86bdc384",
+    "sewer/bg-1.png": "52edb1ff80fc0181ea12f9c793ee7e60c917fca33543ac08e5eff41e90f764df",
+    "sewer/tiles.png": "9b2bca7c7efc537c02a4b2e749cdc303f587918a201c69e93ce373832af4cd52",
+    "warehouses/bg-0.png": "46a4ff811b315b37052aa9a7b9677e808f64a4e707ec211e870cbc232fb922a6",
+    "warehouses/bg-1.png": "90f7c1b2ff10eee43db3e6bf55c7695e441c108c1b5c4adedb886943a61e14cd",
+    "warehouses/tiles.png": "b408576f65d97be4471fbe410c8cf048e3789924150ab45275cfb6062aa9bab1"
+  }
+}

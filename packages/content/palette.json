@@ -1,0 +1,70 @@
+{
+  "comment": "Room characters per district. An entry stamps a material with a collision class (cell defaults to the material's), or a single-cell prop. 'common' applies to every district unless overridden. Collision class names are schemas Cell keys.",
+  "common": {
+    ".": { "cell": "EMPTY" },
+    "~": { "cell": "KILL" }
+  },
+  "rooftops": {
+    "#": { "material": "roof.concrete" },
+    "/": { "material": "roof.concrete", "cell": "SLOPE_UP" },
+    "\\": { "material": "roof.concrete", "cell": "SLOPE_DOWN" },
+    "_": { "material": "roof.concrete", "cell": "HALF" },
+    "s": { "material": "roof.concrete", "cell": "SLAB" },
+    "t": { "material": "roof.tar" },
+    "b": { "material": "roof.brick" },
+    "c": { "material": "roof.brick", "cell": "HALF" },
+    "m": { "material": "roof.sheet" },
+    "=": { "material": "roof.plank" },
+    "H": { "prop": "ladder.roof" },
+    "P": { "prop": "pole.roof" },
+    "-": { "prop": "bar.roof" },
+    "n": { "prop": "post.roof" }
+  },
+  "warehouses": {
+    "#": { "material": "wh.concrete" },
+    "/": { "material": "wh.concrete", "cell": "SLOPE_UP" },
+    "\\": { "material": "wh.concrete", "cell": "SLOPE_DOWN" },
+    "_": { "material": "wh.concrete", "cell": "HALF" },
+    "s": { "material": "wh.concrete", "cell": "SLAB" },
+    "w": { "material": "wh.corrugated" },
+    "d": { "material": "wh.dock" },
+    "b": { "material": "wh.brick" },
+    "=": { "material": "wh.mezzanine" },
+    "H": { "prop": "ladder.wh" },
+    "P": { "prop": "pole.wh" },
+    "-": { "prop": "bar.wh" },
+    "n": { "prop": "fence" },
+    "x": { "prop": "crate" }
+  },
+  "factory": {
+    "#": { "material": "fac.plate" },
+    "/": { "material": "fac.plate", "cell": "SLOPE_UP" },
+    "\\": { "material": "fac.plate", "cell": "SLOPE_DOWN" },
+    "_": { "material": "fac.plate", "cell": "HALF" },
+    "s": { "material": "fac.plate", "cell": "SLAB" },
+    "=": { "material": "fac.grate" },
+    "y": { "material": "fac.beam" },
+    "b": { "material": "fac.brick" },
+    "k": { "material": "fac.concrete" },
+    "H": { "prop": "ladder.fac" },
+    "P": { "prop": "pole.fac" },
+    "-": { "prop": "bar.fac" },
+    "n": { "prop": "post.fac" },
+    "o": { "prop": "barrel" }
+  },
+  "sewer": {
+    "#": { "material": "sew.brick" },
+    "/": { "material": "sew.brick", "cell": "SLOPE_UP" },
+    "\\": { "material": "sew.brick", "cell": "SLOPE_DOWN" },
+    "_": { "material": "sew.concrete", "cell": "HALF" },
+    "s": { "material": "sew.brick", "cell": "SLAB" },
+    "k": { "material": "sew.concrete" },
+    "=": { "material": "sew.grate" },
+    "r": { "material": "sew.stone" },
+    "~": { "material": "sew.sewage" },
+    "H": { "prop": "ladder.sew" },
+    "P": { "prop": "pole.sew" },
+    "-": { "prop": "bar.sew" },
+    "n": { "prop": "post.sew" }
+  }
+}

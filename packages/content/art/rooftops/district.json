@@ -1,0 +1,26 @@
+{
+  "id": "rooftops",
+  "name": "Rooftops",
+  "sky": [26, 24, 51],
+  "background": [
+    {
+      "file": "bg-0.png",
+      "factor": 0.05,
+      "y": -27,
+      "repeatX": true
+    },
+    {
+      "file": "bg-1.png",
+      "factor": 0.15,
+      "y": 128,
+      "repeatX": true
+    },
+    {
+      "file": "bg-2.png",
+      "factor": 0.35,
+      "y": 272,
+      "repeatX": true
+    }
+  ],
+  "ambience": "rooftops.wind"
+}

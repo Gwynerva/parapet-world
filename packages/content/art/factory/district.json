@@ -1,0 +1,26 @@
+{
+  "id": "factory",
+  "name": "Factory Floor",
+  "sky": [20, 22, 28],
+  "background": [
+    {
+      "file": "bg-0.png",
+      "factor": 0.1,
+      "y": 60,
+      "repeatX": true
+    },
+    {
+      "file": "bg-1.png",
+      "factor": 0.25,
+      "y": 144,
+      "repeatX": true
+    },
+    {
+      "file": "bg-2.png",
+      "factor": 0.45,
+      "y": 360,
+      "repeatX": true
+    }
+  ],
+  "ambience": "factory.hum"
+}

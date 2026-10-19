@@ -1,0 +1,364 @@
+{
+  "comment": "Prop catalogue (schemas PropDef). sprite and offset are written by the art generator (node packages/tools/src/art/main.ts) for art/props.png; ids, districts, masks and layers are kept. Masks are rows top to bottom in CELL_CHARS. Single-cell segment props (ladder, pole, bar, post, fence, chain) stack in rooms through palette characters and tile seamlessly.",
+  "props": [
+    {
+      "id": "ladder.roof",
+      "districts": ["rooftops", "warehouses"],
+      "sprite": [361, 231, 32, 32],
+      "offset": [0, 0],
+      "mask": ["H"],
+      "layer": "mid"
+    },
+    {
+      "id": "ladder.wh",
+      "districts": ["warehouses", "rooftops", "factory"],
+      "sprite": [395, 231, 32, 32],
+      "offset": [0, 0],
+      "mask": ["H"],
+      "layer": "mid"
+    },
+    {
+      "id": "ladder.fac",
+      "districts": ["factory", "rooftops"],
+      "sprite": [429, 231, 32, 32],
+      "offset": [0, 0],
+      "mask": ["H"],
+      "layer": "mid"
+    },
+    {
+      "id": "ladder.sew",
+      "districts": ["sewer", "warehouses", "factory"],
+      "sprite": [463, 231, 32, 32],
+      "offset": [0, 0],
+      "mask": ["H"],
+      "layer": "mid"
+    },
+    {
+      "id": "pole.roof",
+      "districts": ["rooftops"],
+      "sprite": [1, 297, 32, 32],
+      "offset": [0, 0],
+      "mask": ["P"],
+      "layer": "mid"
+    },
+    {
+      "id": "pole.wh",
+      "districts": ["warehouses"],
+      "sprite": [35, 297, 32, 32],
+      "offset": [0, 0],
+      "mask": ["P"],
+      "layer": "mid"
+    },
+    {
+      "id": "pole.fac",
+      "districts": ["factory", "rooftops"],
+      "sprite": [69, 297, 32, 32],
+      "offset": [0, 0],
+      "mask": ["P"],
+      "layer": "mid"
+    },
+    {
+      "id": "pole.sew",
+      "districts": ["sewer"],
+      "sprite": [103, 297, 32, 32],
+      "offset": [0, 0],
+      "mask": ["P"],
+      "layer": "mid"
+    },
+    {
+      "id": "bar.roof",
+      "districts": ["rooftops"],
+      "sprite": [461, 331, 32, 8],
+      "offset": [0, 0],
+      "mask": ["-"],
+      "layer": "mid"
+    },
+    {
+      "id": "bar.wh",
+      "districts": ["warehouses"],
+      "sprite": [1, 349, 32, 8],
+      "offset": [0, 0],
+      "mask": ["-"],
+      "layer": "mid"
+    },
+    {
+      "id": "bar.fac",
+      "districts": ["factory", "rooftops"],
+      "sprite": [427, 331, 32, 14],
+      "offset": [0, -6],
+      "mask": ["-"],
+      "layer": "mid"
+    },
+    {
+      "id": "bar.sew",
+      "districts": ["sewer"],
+      "sprite": [35, 349, 32, 8],
+      "offset": [0, 0],
+      "mask": ["-"],
+      "layer": "mid"
+    },
+    {
+      "id": "post.roof",
+      "districts": ["rooftops"],
+      "sprite": [137, 297, 32, 32],
+      "offset": [0, 0],
+      "mask": ["n"],
+      "layer": "mid"
+    },
+    {
+      "id": "post.fac",
+      "districts": ["factory"],
+      "sprite": [171, 297, 32, 32],
+      "offset": [0, 0],
+      "mask": ["n"],
+      "layer": "mid"
+    },
+    {
+      "id": "post.sew",
+      "districts": ["sewer"],
+      "sprite": [205, 297, 32, 32],
+      "offset": [0, 0],
+      "mask": ["n"],
+      "layer": "mid"
+    },
+    {
+      "id": "fence",
+      "districts": ["warehouses", "factory", "rooftops"],
+      "sprite": [239, 297, 32, 32],
+      "offset": [0, 0],
+      "mask": ["n"],
+      "layer": "mid"
+    },
+    {
+      "id": "ac.unit",
+      "districts": ["rooftops"],
+      "sprite": [295, 231, 64, 32],
+      "offset": [0, 0],
+      "mask": ["##"],
+      "layer": "mid"
+    },
+    {
+      "id": "water.tank",
+      "districts": ["rooftops"],
+      "sprite": [131, 1, 96, 96],
+      "offset": [0, 0],
+      "mask": ["###", "###", "n.n"],
+      "layer": "mid"
+    },
+    {
+      "id": "vent.duct",
+      "districts": ["rooftops"],
+      "sprite": [131, 331, 96, 16],
+      "offset": [0, 16],
+      "mask": ["___"],
+      "layer": "mid"
+    },
+    {
+      "id": "chimney",
+      "districts": ["rooftops"],
+      "sprite": [397, 165, 32, 64],
+      "offset": [0, 0],
+      "mask": ["#", "#"],
+      "layer": "mid"
+    },
+    {
+      "id": "billboard",
+      "districts": ["rooftops"],
+      "sprite": [1, 1, 128, 96],
+      "offset": [0, 0],
+      "mask": ["====", "....", "...."],
+      "layer": "mid"
+    },
+    {
+      "id": "skylight",
+      "districts": ["rooftops"],
+      "sprite": [229, 331, 64, 16],
+      "offset": [0, 16],
+      "mask": ["__"],
+      "layer": "mid"
+    },
+    {
+      "id": "container",
+      "districts": ["warehouses"],
+      "sprite": [1, 99, 192, 64],
+      "offset": [0, 0],
+      "mask": ["######", "######"],
+      "layer": "mid"
+    },
+    {
+      "id": "container.blue",
+      "districts": ["warehouses"],
+      "sprite": [195, 99, 192, 64],
+      "offset": [0, 0],
+      "mask": ["######", "######"],
+      "layer": "mid"
+    },
+    {
+      "id": "crate",
+      "districts": ["warehouses", "factory", "rooftops", "sewer"],
+      "sprite": [341, 297, 32, 32],
+      "offset": [0, 0],
+      "mask": ["#"],
+      "layer": "mid"
+    },
+    {
+      "id": "crate.big",
+      "districts": ["warehouses"],
+      "sprite": [1, 165, 64, 64],
+      "offset": [0, 0],
+      "mask": ["##", "##"],
+      "layer": "mid"
+    },
+    {
+      "id": "pallet",
+      "districts": ["warehouses", "factory"],
+      "sprite": [295, 331, 64, 16],
+      "offset": [0, 16],
+      "mask": ["__"],
+      "layer": "mid"
+    },
+    {
+      "id": "rack",
+      "districts": ["warehouses"],
+      "sprite": [229, 1, 96, 96],
+      "offset": [0, 0],
+      "mask": ["===", "...", "==="],
+      "layer": "mid"
+    },
+    {
+      "id": "forklift",
+      "districts": ["warehouses"],
+      "sprite": [67, 165, 64, 64],
+      "offset": [0, 0],
+      "mask": ["..", "##"],
+      "layer": "mid"
+    },
+    {
+      "id": "catwalk.rail",
+      "districts": ["factory"],
+      "sprite": [35, 231, 128, 36],
+      "offset": [0, -32],
+      "mask": ["...."],
+      "layer": "front"
+    },
+    {
+      "id": "machine",
+      "districts": ["factory"],
+      "sprite": [389, 99, 96, 64],
+      "offset": [0, 0],
+      "mask": ["###", "###"],
+      "layer": "mid"
+    },
+    {
+      "id": "press",
+      "districts": ["factory"],
+      "sprite": [327, 1, 64, 96],
+      "offset": [0, 0],
+      "mask": ["##", "..", "##"],
+      "layer": "mid"
+    },
+    {
+      "id": "barrel",
+      "districts": ["factory", "warehouses", "sewer"],
+      "sprite": [375, 297, 32, 32],
+      "offset": [0, 0],
+      "mask": ["#"],
+      "layer": "mid"
+    },
+    {
+      "id": "chain",
+      "districts": ["factory", "rooftops", "warehouses"],
+      "sprite": [273, 297, 32, 32],
+      "offset": [0, 0],
+      "mask": ["P"],
+      "layer": "mid"
+    },
+    {
+      "id": "conveyor",
+      "districts": ["factory"],
+      "sprite": [1, 331, 128, 16],
+      "offset": [0, 16],
+      "mask": ["____"],
+      "layer": "mid"
+    },
+    {
+      "id": "pipe.big",
+      "districts": ["sewer"],
+      "sprite": [165, 231, 128, 32],
+      "offset": [0, 0],
+      "mask": ["####"],
+      "layer": "mid"
+    },
+    {
+      "id": "sluice",
+      "districts": ["sewer"],
+      "sprite": [393, 1, 32, 96],
+      "offset": [0, 0],
+      "mask": ["#", "#", "#"],
+      "layer": "mid"
+    },
+    {
+      "id": "rubble",
+      "districts": ["sewer"],
+      "sprite": [361, 331, 64, 16],
+      "offset": [0, 16],
+      "mask": ["__"],
+      "layer": "mid"
+    },
+    {
+      "id": "valve",
+      "districts": ["sewer", "factory", "warehouses"],
+      "sprite": [409, 297, 32, 32],
+      "offset": [0, 0],
+      "mask": ["."],
+      "layer": "front"
+    },
+    {
+      "id": "hub.sign.rooftops",
+      "districts": ["rooftops"],
+      "sprite": [133, 165, 64, 64],
+      "offset": [0, 0],
+      "mask": ["..", ".."],
+      "layer": "mid"
+    },
+    {
+      "id": "hub.sign.warehouses",
+      "districts": ["warehouses"],
+      "sprite": [199, 165, 64, 64],
+      "offset": [0, 0],
+      "mask": ["..", ".."],
+      "layer": "mid"
+    },
+    {
+      "id": "hub.sign.factory",
+      "districts": ["factory"],
+      "sprite": [265, 165, 64, 64],
+      "offset": [0, 0],
+      "mask": ["..", ".."],
+      "layer": "mid"
+    },
+    {
+      "id": "hub.sign.sewer",
+      "districts": ["sewer"],
+      "sprite": [331, 165, 64, 64],
+      "offset": [0, 0],
+      "mask": ["..", ".."],
+      "layer": "mid"
+    },
+    {
+      "id": "chain.hook",
+      "districts": ["factory", "rooftops", "warehouses"],
+      "sprite": [307, 297, 32, 32],
+      "offset": [0, 0],
+      "mask": ["P"],
+      "layer": "mid"
+    }
+  ],
+  "markers": {
+    "comment": "Sprites the game draws for entities (not placed props): finds, gates. The art generator fills them in art/props.png.",
+    "find": [443, 297, 32, 32],
+    "gate.start": [431, 165, 32, 64],
+    "gate.checkpoint": [465, 165, 32, 64],
+    "gate.finish": [1, 231, 32, 64]
+  }
+}

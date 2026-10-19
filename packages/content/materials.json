@@ -1,0 +1,185 @@
+{
+  "comment": "Tile materials by district. slot = band in art/<district>/tiles.png (schemas atlas.ts). avg is refined by the art generator. cell is the default collision class name of the material's main room character.",
+  "materials": [
+    {
+      "id": "roof.concrete",
+      "district": "rooftops",
+      "slot": 0,
+      "cell": "SOLID",
+      "avg": [144, 136, 134],
+      "depth": "strip",
+      "sound": "concrete"
+    },
+    {
+      "id": "roof.tar",
+      "district": "rooftops",
+      "slot": 1,
+      "cell": "SOLID",
+      "avg": [57, 54, 64],
+      "depth": "strip",
+      "sound": "tar"
+    },
+    {
+      "id": "roof.brick",
+      "district": "rooftops",
+      "slot": 2,
+      "cell": "SOLID",
+      "avg": [149, 108, 94],
+      "depth": "strip",
+      "sound": "brick"
+    },
+    {
+      "id": "roof.sheet",
+      "district": "rooftops",
+      "slot": 3,
+      "cell": "SOLID",
+      "avg": [104, 119, 135],
+      "depth": "strip",
+      "sound": "metal"
+    },
+    {
+      "id": "roof.plank",
+      "district": "rooftops",
+      "slot": 4,
+      "cell": "TOP",
+      "avg": [129, 87, 54],
+      "depth": "strip",
+      "sound": "wood"
+    },
+    {
+      "id": "wh.concrete",
+      "district": "warehouses",
+      "slot": 0,
+      "cell": "SOLID",
+      "avg": [130, 132, 132],
+      "depth": "strip",
+      "sound": "concrete"
+    },
+    {
+      "id": "wh.corrugated",
+      "district": "warehouses",
+      "slot": 1,
+      "cell": "SOLID",
+      "avg": [77, 117, 132],
+      "depth": "strip",
+      "sound": "metal"
+    },
+    {
+      "id": "wh.dock",
+      "district": "warehouses",
+      "slot": 2,
+      "cell": "SOLID",
+      "avg": [112, 107, 101],
+      "depth": "strip",
+      "sound": "concrete"
+    },
+    {
+      "id": "wh.brick",
+      "district": "warehouses",
+      "slot": 3,
+      "cell": "SOLID",
+      "avg": [149, 101, 76],
+      "depth": "strip",
+      "sound": "brick"
+    },
+    {
+      "id": "wh.mezzanine",
+      "district": "warehouses",
+      "slot": 4,
+      "cell": "TOP",
+      "avg": [160, 144, 95],
+      "depth": "strip",
+      "sound": "metal"
+    },
+    {
+      "id": "fac.plate",
+      "district": "factory",
+      "slot": 0,
+      "cell": "SOLID",
+      "avg": [87, 97, 111],
+      "depth": "strip",
+      "sound": "metal"
+    },
+    {
+      "id": "fac.grate",
+      "district": "factory",
+      "slot": 1,
+      "cell": "TOP",
+      "avg": [62, 69, 79],
+      "depth": "strip",
+      "sound": "grate"
+    },
+    {
+      "id": "fac.beam",
+      "district": "factory",
+      "slot": 2,
+      "cell": "SOLID",
+      "avg": [186, 129, 39],
+      "depth": "strip",
+      "sound": "metal"
+    },
+    {
+      "id": "fac.brick",
+      "district": "factory",
+      "slot": 3,
+      "cell": "SOLID",
+      "avg": [106, 80, 70],
+      "depth": "strip",
+      "sound": "brick"
+    },
+    {
+      "id": "fac.concrete",
+      "district": "factory",
+      "slot": 4,
+      "cell": "SOLID",
+      "avg": [134, 129, 120],
+      "depth": "strip",
+      "sound": "concrete"
+    },
+    {
+      "id": "sew.brick",
+      "district": "sewer",
+      "slot": 0,
+      "cell": "SOLID",
+      "avg": [75, 56, 42],
+      "depth": "strip",
+      "sound": "wet"
+    },
+    {
+      "id": "sew.concrete",
+      "district": "sewer",
+      "slot": 1,
+      "cell": "SOLID",
+      "avg": [101, 108, 95],
+      "depth": "strip",
+      "sound": "wet"
+    },
+    {
+      "id": "sew.grate",
+      "district": "sewer",
+      "slot": 2,
+      "cell": "TOP",
+      "avg": [57, 61, 53],
+      "depth": "strip",
+      "sound": "grate"
+    },
+    {
+      "id": "sew.stone",
+      "district": "sewer",
+      "slot": 3,
+      "cell": "SOLID",
+      "avg": [80, 76, 69],
+      "depth": "strip",
+      "sound": "concrete"
+    },
+    {
+      "id": "sew.sewage",
+      "district": "sewer",
+      "slot": 4,
+      "cell": "KILL",
+      "avg": [57, 73, 28],
+      "depth": "flat",
+      "sound": "wet"
+    }
+  ]
+}

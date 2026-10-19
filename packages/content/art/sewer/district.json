@@ -1,0 +1,20 @@
+{
+  "id": "sewer",
+  "name": "Sewer",
+  "sky": [12, 15, 13],
+  "background": [
+    {
+      "file": "bg-0.png",
+      "factor": 0.1,
+      "y": 263,
+      "repeatX": true
+    },
+    {
+      "file": "bg-1.png",
+      "factor": 0.3,
+      "y": 836,
+      "repeatX": true
+    }
+  ],
+  "ambience": "sewer.drips"
+}
