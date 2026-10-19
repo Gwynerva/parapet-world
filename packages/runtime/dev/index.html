@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Parapet World renderer</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #14161c;
+        --fg: #e8e6df;
+        --muted: #9a9db0;
+        --line: #2d303b;
+        --panel: #1c1f27;
+        --accent: #ff8a3d;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font:
+          14px/1.5 system-ui,
+          sans-serif;
+      }
+      #view {
+        display: block;
+        width: 100%;
+        aspect-ratio: 683 / 384;
+        max-height: 78vh;
+        background: #000;
+      }
+      .bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 18px;
+        align-items: center;
+        padding: 10px 16px;
+        background: var(--panel);
+        border-bottom: 1px solid var(--line);
+      }
+      .bar label {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+      }
+      .bar input[type='range'] {
+        width: 110px;
+      }
+      .mono {
+        font:
+          12px/1.5 ui-monospace,
+          Consolas,
+          monospace;
+        color: var(--muted);
+        font-variant-numeric: tabular-nums;
+      }
+      #fps {
+        color: var(--accent);
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="view"></canvas>
+    <div class="bar">
+      <span id="fps" class="mono">-- fps</span>
+      <label
+        >Depth fill
+        <select id="fill">
+          <option value="strip" selected>strip</option>
+          <option value="edge">edge</option>
+          <option value="flat">flat</option>
+        </select></label
+      >
+      <label
+        >Slab depth <input id="slab" type="range" min="0" max="32" step="1" value="16" />
+        <span id="slabv" class="mono">16 px</span></label
+      >
+      <label
+        >Perspective <input id="persp" type="range" min="0" max="0.3" step="0.01" value="0.15" />
+        <span id="perspv" class="mono">15%</span></label
+      >
+      <label
+        >Runner depth <input id="rdepth" type="range" min="0" max="1" step="0.05" value="0.5" />
+        <span id="rdepthv" class="mono">0.50</span></label
+      >
+      <label
+        >Camera height <input id="camy" type="range" min="-320" max="320" step="1" value="0" />
+      </label>
+      <label><input id="auto" type="checkbox" checked /> autopilot</label>
+      <label><input id="pause" type="checkbox" /> pause</label>
+    </div>
+    <div class="bar">
+      <span id="stats" class="mono"></span>
+      <span id="source" class="mono"></span>
+    </div>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>
