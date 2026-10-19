@@ -5,6 +5,10 @@ scheduled. One rule runs through all of it: **everything is our own** — the mo
 tuning, the character and its animation, the city, the music. See `LESSONS-FROM-CLASSIC.md` for
 what we take from Parapet Classic (ideas and architecture) and what we do not (its content).
 
+One recorded exception: the MVP's runner animation clips are lifted from Classic's keyframes onto
+our 3D rig. They are a temporary stand-in kept in their own folder, they block any public build,
+and they are to be replaced or improved later (`docs/MVP-PLAN.md`, section 8).
+
 ## 1. One big world ("the city")
 
 Instead of picking levels from a menu, every player runs around one huge, connected map and
@@ -19,15 +23,19 @@ Why the architecture proven in Classic supports it:
 - A deterministic simulation runs N runners with independent input streams. Runners do not
   collide with each other in parkour, so showing other players needs no physics between them.
 - One step of one runner costs a few hundred integer operations; a server core can simulate
-  hundreds of runners thirty times per second. Network traffic is presses only: a few bytes per
-  press, nothing per step while running straight.
+  hundreds of runners thirty times per second. Network traffic is held-key runs: a few bytes per
+  change of the held keys, nothing per step while running straight. (Classic logged presses; the
+  MVP plan chose held keys, with press edges derived inside the simulation.)
 - Fairness stays replay-based: the server receives inputs, not positions, and re-simulates any
   run it puts on a leaderboard.
 
 Building blocks, in order:
 
 1. **Chunked world map** with regions ("zones") carrying metadata: name, difficulty, theme,
-   background art, music. Districts are designed for the city, connected by rooftops.
+   background art, music. Districts are designed for the city, connected by rooftops. The MVP
+   builds four of them in one seamless city (rooftops, warehouses, factory floor and a sewer
+   underneath), each extensive, with a hub, four time-trial routes from easy to expert and four hidden finds
+   (`docs/MVP-PLAN.md`).
 2. **Regions and their hubs.** Every region of the world has a hub: a safe place where its
    runners arrive, meet and set out from. A hub a player has reached once is a destination for
    good: from any hub they can teleport straight to any other hub they know, so the regions
@@ -38,8 +46,10 @@ Building blocks, in order:
    gate starts a timer for that player; the run ends at the finish or when the player leaves
    the route corridor. Several players can be in the same run at once, each on their own timer.
 4. **Rooms of dozens of players.** A room is a world instance; the server relays input events
-   with step numbers (lockstep with a small fixed delay, no rollback, because runners never
-   interact). Late joiners receive a snapshot of every runner and start stepping from there.
+   with step numbers. Each player's own runner is predicted with no delay and other runners are
+   shown a little behind; no rollback is needed while runners never interact and nothing shared
+   in the world changes. Late joiners receive a snapshot of every runner and start stepping from
+   there. The MVP has one shared world and no separate rooms yet.
 5. **Interest management.** Clients only need runners within a few screens; the server filters
    by zone or chunk and the client extrapolates briefly when a packet is late.
 6. **Authoritative results.** Run results are computed by the server from the relayed inputs,
@@ -87,6 +97,30 @@ Things to keep in mind:
   is something worth cheating for.
 
 ## 2. Modes beyond plain races
+
+- **Urgency expressed through the world.** Some routes ask the player to get somewhere quickly,
+  but the reason to hurry is a visible, physical process rather than a bare countdown. The
+  remaining opportunity should be readable from the object or surroundings at a glance;
+  the simulation can still measure it in steps for fair, replay-verifiable results.
+  - Carry a charged cell to a receiver before it discharges. Its light dims, sparks weaken,
+    and the receiver visibly needs that charge; choosing a fast route is the challenge.
+  - Deliver a heat-sensitive sample to a cooling station. Its casing changes colour and
+    gives off more vapour as it warms, making detours and exposed routes meaningful.
+  - Keep a chain of rooftop relays alive: touching one sends a pulse toward the next, and
+    the illuminated cable or beacon fades if the runner takes too long. Each relay renews
+    the pulse, turning the route into a sequence of short navigation decisions.
+  - Cross a district while a moving hazard closes routes behind the runner, such as a
+    rising flood or a sweeping searchlight. The hazard's position shows the urgency and
+    can make a different line through the district worthwhile on each attempt.
+    These should have clear visual and audio warnings before failure, and a failed delivery
+    should be easy to retry from its pickup point.
+- **Untimed searches across zones.** A task can point to a particular object in another
+  district without marking its exact location or starting a timer. Hide it in a place that
+  rewards noticing architecture, exploring vertical routes and using the parkour moves:
+  behind a roofline, inside an accessible service space, or on a hard-to-reach structure.
+  Give a broad clue tied to a recognizable landmark so searching a large area feels like
+  exploration rather than checking every tile. Finding and reaching the object is the
+  objective; players can take detours, learn the district, and return later without penalty.
 
 - **Max score.** A time-limited run on tracks built for it (loops and arenas with a mix of
   obstacles) where the goal is the highest score. Repeating the same trick in a row pays less

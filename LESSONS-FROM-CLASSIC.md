@@ -15,7 +15,8 @@ first and leaves the second.
   presses and the surroundings, impulses, root motion, phase timing, score type. New moves are
   data, not code paths. Design our own table and tune it ourselves.
 - **Press-only input logged as runs.** Inputs are presses (not held keys) OR-ed per step and
-  recorded as `(ticks, bits)` runs; a minute of play is a few hundred bytes.
+  recorded as `(ticks, bits)` runs; a minute of play is a few hundred bytes. Parapet World keeps
+  the run-length log but records held keys instead, deriving press edges inside the simulation.
 - **Replays as proof.** A replay is the input log plus the simulation version, ruleset id and
   content hashes. Whoever re-runs it computes the result themselves; a claimed number means
   nothing. Classic's `sim/replayCodec.ts` (compact binary in base64url) and `sim/verify.ts`
@@ -45,7 +46,9 @@ first and leaves the second.
 
 - Nothing from Classic's `packages/content-classic`: no sprites, animations, levels, rival
   recordings, music, texts, palettes or fonts derived from the original.
-- Not the original move table, its values or its tuning, and not its animation keyframes.
+- Not the original move table, its values or its tuning, and not its animation keyframes. One
+  recorded exception: the MVP uses clips lifted from those keyframes onto our 3D rig as a
+  temporary stand-in, kept apart and blocked from public builds (`docs/MVP-PLAN.md`, section 8).
 - Not the code of Classic's simulation copied over: it was written by reading decompiled code.
   Write our own simulation from the techniques above and our own design.
 - Not the names: no Playman, no Blaise, no original character or level names.
