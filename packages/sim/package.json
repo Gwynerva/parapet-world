@@ -1,0 +1,14 @@
+{
+  "name": "@parapet-world/sim",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Deterministic integer simulation of runners",
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*"
+  },
+  "dependencies": {
+    "@parapet-world/schemas": "*"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "@parapet-world/runtime",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Browser runtime: loop, input, WebGL renderer, audio",
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*"
+  },
+  "dependencies": {
+    "@parapet-world/schemas": "*",
+    "@parapet-world/sim": "*"
+  }
+}

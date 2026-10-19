@@ -1,0 +1,9 @@
+node_modules
+dist
+package-lock.json
+packages/content/dist
+packages/content/clips
+packages/content/world/rooms
+run
+stumble
+turn

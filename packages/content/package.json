@@ -1,0 +1,6 @@
+{
+  "name": "@parapet-world/content",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Game content: rooms, palette, props, art, clips, skins, bots; dist/ is baked output"
+}

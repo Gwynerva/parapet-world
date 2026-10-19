@@ -1,0 +1,18 @@
+{
+  "name": "@parapet-world/server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Game server",
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*"
+  },
+  "dependencies": {
+    "@parapet-world/schemas": "*",
+    "@parapet-world/sim": "*",
+    "@parapet-world/protocol": "*",
+    "@parapet-world/net": "*",
+    "ws": "^8.18.3"
+  }
+}

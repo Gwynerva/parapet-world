@@ -1,0 +1,36 @@
+{
+  "name": "parapet-world",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Parapet World - a parkour runner in one big shared city",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w @parapet-world/game",
+    "build": "npm run build -w @parapet-world/game",
+    "bake": "node packages/tools/src/bake/main.ts",
+    "serve": "node packages/server/src/main.ts",
+    "check:bots": "node packages/server/src/checkBots.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "node scripts/typecheck.mjs",
+    "boundaries": "node scripts/boundaries.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "npm run format:check && npm run boundaries && npm run typecheck && npm test",
+    "check:public": "node packages/tools/src/publicCheck.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "@types/ws": "^8.18.1",
+    "prettier": "^3.9.9",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.3",
+    "vitest": "^5.0.3"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

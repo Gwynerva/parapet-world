@@ -1,0 +1,11 @@
+{
+  "name": "@parapet-world/schemas",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Data formats, constants and validators shared by every package",
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*"
+  }
+}
