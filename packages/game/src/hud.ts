@@ -59,7 +59,7 @@ export class Hud {
   constructor() {
     this.finds = h('div', { class: 'chip' });
     this.where = h('div', { class: 'chip dim' });
-    this.status = h('div', { class: 'chip dim' });
+    this.status = h('div', { class: 'chip dim', style: 'display:none' });
     this.tName = h('div', { class: 'name' });
     this.tTime = h('div', { class: 't' });
     this.tSplits = h('div', { class: 'splits' });
