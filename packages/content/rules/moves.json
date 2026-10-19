@@ -1,0 +1,955 @@
+{
+  "format": 1,
+  "version": 2,
+  "comment": "Parapet World move table, ruleset v1 of the MVP (see packages/sim/README.md). Units: 1 px = 32 units, 1 cell = 1024; speeds in units per step (30 steps/s). Values and tuning are our own.",
+  "params": {
+    "halfWidth": 256,
+    "height": 1792,
+    "crouchHeight": 864,
+    "stepUp": 288,
+    "stepDown": 64,
+    "gravity": 30,
+    "maxFall": 800,
+    "maxSpeed": 960,
+
+    "runSpeed": 184,
+    "runAccel": 16,
+    "runStride": 3072,
+    "startAccel": 20,
+    "startSteps": 10,
+    "uphillSpeed": 150,
+    "uphillStride": 2560,
+    "downhillSpeed": 212,
+    "downhillStride": 3584,
+    "slopeAccel": 10,
+    "idleDecel": 30,
+    "skidDecel": 14,
+    "skidMinSpeed": 120,
+    "turnDecel": 20,
+    "turnSteps": 9,
+    "turnFastDecel": 30,
+    "turnFastSteps": 6,
+    "turnFastMaxSpeed": 110,
+
+    "jumpVY": 300,
+    "jumpPerSpeed": 32,
+    "jumpSteps": 12,
+    "jumpBuffer": 3,
+    "coyoteSteps": 4,
+    "coastMinSpeed": 120,
+    "coastSteps": 7,
+    "tigerMinSpeed": 140,
+    "tigerVY": 240,
+    "tigerSpeed": 336,
+    "tigerSteps": 18,
+    "airAccel": 6,
+    "airSpeed": 150,
+
+    "hardVY": 440,
+    "fatalVY": 760,
+    "rollWindow": 6,
+    "rollSpeed": 160,
+    "rollAccel": 6,
+    "rollSteps": 20,
+    "landSoftSteps": 4,
+    "landHardSteps": 10,
+    "landHardDecel": 20,
+    "stumbleSpeed": 150,
+    "stumbleSteps": 24,
+    "stumbleDecel": 6,
+    "dropSteps": 6,
+    "deadSteps": 45,
+    "corridorGrace": 20,
+
+    "flipHopVY": 330,
+    "frontFlipSteps": 22,
+    "backFlipSteps": 24,
+    "flipSafe": 12,
+    "flipClean": 18,
+
+    "crashSpeed": 176,
+    "crashAirSpeed": 150,
+    "crashBounceVX": -64,
+    "crashHopVY": -120,
+    "crashSteps": 8,
+    "crashDownSteps": 14,
+    "crashDownDecel": 30,
+    "getUpSteps": 30,
+    "tripSpeed": 120,
+    "tripVX": 80,
+    "tripVY": -160,
+    "tripSteps": 8,
+    "kneeHeight": 1100,
+
+    "wallReach": 512,
+    "wallRunMinSpeed": 120,
+    "wallRunVY": 200,
+    "wallRunPerSpeed": 222,
+    "wallRunGravity": 24,
+    "wallRunPress": 16,
+    "wallRunSteps": 20,
+    "wallRunEndVY": 60,
+    "wallTopSteps": 8,
+    "wallTopLift": 256,
+    "ticTacVX": 150,
+    "ticTacVY": -330,
+    "ticTacSteps": 10,
+    "wallFlipVX": 140,
+    "wallFlipVY": -360,
+    "wallFlipSteps": 24,
+
+    "ledgeReach": 384,
+    "grabLow": 1280,
+    "grabHigh": 2432,
+    "hangBack": -256,
+    "hangDrop": 1536,
+    "climbIn": 320,
+    "ledgeGrabSteps": 5,
+    "ledgeHoldSteps": 6,
+    "ledgeClimbSteps": 18,
+    "ledgeClimbLift": 128,
+    "ledgeDropSteps": 4,
+    "ledgeJumpBackVX": 150,
+    "ledgeJumpBackVY": -300,
+    "ledgeJumpBackSteps": 12,
+    "gripLock": 10,
+
+    "stepReach": 560,
+    "stepMaxH": 576,
+    "stepOverVY": -220,
+    "stepOverSpeed": 120,
+    "stepOverSteps": 8,
+    "vaultReach": 1600,
+    "vaultMaxH": 1216,
+    "vaultSteps": 14,
+    "vaultLift": 192,
+    "monkeyVaultSteps": 18,
+    "monkeyVaultLift": 256,
+    "slideReach": 512,
+    "slideSpeed": 170,
+    "slideAccel": 4,
+    "slideMinSpeed": 64,
+    "slideMinSteps": 10,
+
+    "ladderUp": 80,
+    "ladderDown": 80,
+    "ladderSlideAccel": 20,
+    "ladderSlideMax": 400,
+    "ladderEnterSteps": 5,
+    "ladderTopReach": 2048,
+    "ladderTopSteps": 16,
+    "ladderTopLift": 256,
+    "ladderStride": 1024,
+    "ladderGrabSpeed": 100,
+    "ladderLeaveVX": 100,
+
+    "poleReach": 384,
+    "poleBack": -192,
+    "poleFront": 192,
+    "poleGrabSteps": 5,
+    "poleGravity": 12,
+    "poleMaxVY": 320,
+    "poleJumpVX": 180,
+    "poleJumpVY": -300,
+    "poleJumpSteps": 12,
+    "poleSpinSpeed": 150,
+    "poleSpinSteps": 14,
+    "poleSpinOut": 200,
+    "poleSpinVY": -200,
+
+    "barLow": 1600,
+    "barHigh": 2560,
+    "barHang": 2176,
+    "barGrabSteps": 4,
+    "barSwingLoop": 30,
+    "barJumpVX": 200,
+    "barJumpVY": -320,
+    "barJumpSteps": 12
+  },
+  "roles": {
+    "spawn": "idle",
+    "fall": "fall",
+    "dead": "dead",
+    "respawn": "respawn",
+    "frozen": "frozen"
+  },
+  "moves": [
+    {
+      "name": "base",
+      "abstract": true,
+      "comment": "Every live move: KILL cells are fatal.",
+      "transitions": [{ "to": "dead", "if": ["inKill"], "priority": 100 }]
+    },
+    {
+      "name": "grounded",
+      "abstract": true,
+      "parent": "base",
+      "flags": ["ground"],
+      "transitions": [{ "to": "fall", "if": ["!onGround"], "priority": 90 }]
+    },
+    {
+      "name": "airborne",
+      "abstract": true,
+      "parent": "base",
+      "flags": ["lockFacing"],
+      "comment": "Landing: fatal, rolled (DOWN pressed shortly before), stumbled at speed, hard or soft.",
+      "transitions": [
+        { "to": "dead", "if": ["onGround", "landedFaster:$fatalVY"], "priority": 80 },
+        { "to": "roll", "if": ["onGround", "recent:DOWN:$rollWindow"], "priority": 70 },
+        {
+          "to": "stumble",
+          "if": ["onGround", "landedFaster:$hardVY", "speedAbove:$stumbleSpeed"],
+          "priority": 65
+        },
+        { "to": "landHard", "if": ["onGround", "landedFaster:$hardVY"], "priority": 60 },
+        { "to": "landSoft", "if": ["onGround"], "priority": 50 }
+      ]
+    },
+    {
+      "name": "freeAir",
+      "abstract": true,
+      "parent": "airborne",
+      "comment": "In free flight the hands grab what they meet, walls can be kicked off, flips can start.",
+      "transitions": [
+        {
+          "to": "ledgeGrab",
+          "if": ["ledgeAhead:$ledgeReach:$grabLow:$grabHigh", "!held:DOWN", "!gripLocked"],
+          "priority": 45
+        },
+        {
+          "to": "barGrab",
+          "if": ["barHere:$barLow:$barHigh", "!held:DOWN", "!gripLocked"],
+          "priority": 44
+        },
+        {
+          "to": "poleSpin",
+          "if": ["poleHere:$poleReach", "speedAbove:$poleSpinSpeed", "!held:DOWN", "!gripLocked"],
+          "priority": 43
+        },
+        {
+          "to": "poleGrab",
+          "if": ["poleHere:$poleReach", "!held:DOWN", "!gripLocked"],
+          "priority": 42
+        },
+        { "to": "ladderEnter", "if": ["ladderHere", "held:UP", "!gripLocked"], "priority": 41 },
+        { "to": "ladderEnter", "if": ["ladderHere", "held:DOWN", "!gripLocked"], "priority": 41 },
+        {
+          "to": "wallRun",
+          "if": ["impactAbove:$wallRunMinSpeed", "held:UP", "highWallAhead:1"],
+          "priority": 38
+        },
+        {
+          "to": "ticTac",
+          "if": ["pressed:UP", "wallAhead:$wallReach", "airSteps:3"],
+          "priority": 37
+        },
+        { "to": "crash", "if": ["impactAbove:$crashAirSpeed", "highWallAhead:1"], "priority": 36 },
+        {
+          "to": "trip",
+          "if": ["impactAbove:$tripSpeed", "lowWallAhead:$kneeHeight"],
+          "priority": 35
+        },
+        { "to": "frontFlip", "if": ["pressed:ACTION", "!want:BACK"], "priority": 34 },
+        { "to": "backFlip", "if": ["pressed:ACTION"], "priority": 33 }
+      ]
+    },
+    {
+      "name": "moving",
+      "abstract": true,
+      "parent": "grounded",
+      "flags": ["cycle"],
+      "comment": "What a runner on its feet and moving can do, in order (running and coasting).",
+      "transitions": [
+        {
+          "to": "wallRun",
+          "if": [
+            "recent:UP:$jumpBuffer",
+            "highWallAhead:$wallReach",
+            "forwardAbove:$wallRunMinSpeed"
+          ]
+        },
+        { "to": "ladderEnter", "if": ["held:UP", "ladderHere", "speedBelow:$ladderGrabSpeed"] },
+        {
+          "to": "monkeyVault",
+          "if": [
+            "recent:UP:$jumpBuffer",
+            "vaultAhead:$vaultReach:$vaultMaxH:2",
+            "!vaultAhead:$vaultReach:$vaultMaxH:1"
+          ]
+        },
+        { "to": "vault", "if": ["recent:UP:$jumpBuffer", "vaultAhead:$vaultReach:$vaultMaxH:1"] },
+        { "to": "jump", "if": ["recent:UP:$jumpBuffer"] },
+        { "to": "stepOver", "if": ["want:FWD", "obstacleAhead:$stepReach:$stepMaxH"] },
+        { "to": "slideUnder", "if": ["pressed:DOWN", "ceilingAhead:$slideReach"] },
+        { "to": "roll", "if": ["pressed:DOWN"] },
+        { "to": "frontFlip", "if": ["pressed:ACTION"] },
+        { "to": "crash", "if": ["impactAbove:$crashSpeed", "highWallAhead:1"] },
+        { "to": "trip", "if": ["impactAbove:$crashSpeed", "lowWallAhead:$kneeHeight"] },
+        { "to": "turn", "if": ["want:BACK", "speedAbove:$turnFastMaxSpeed"] },
+        { "to": "turnFast", "if": ["want:BACK"] },
+        { "to": "idle", "if": ["wallAhead:1"] }
+      ]
+    },
+    {
+      "name": "running",
+      "abstract": true,
+      "parent": "moving",
+      "comment": "Forward held. Letting go at speed coasts for a moment, so a re-press can be read.",
+      "transitions": [
+        { "to": "coast", "if": ["!held:FWD", "!held:BACK", "speedAbove:$coastMinSpeed"] },
+        { "to": "skid", "if": ["!want:FWD", "!want:BACK", "speedAbove:$skidMinSpeed"] },
+        { "to": "idle", "if": ["!want:FWD", "!want:BACK"] }
+      ]
+    },
+
+    {
+      "name": "idle",
+      "parent": "grounded",
+      "clip": "idle",
+      "loop": 145,
+      "perStep": [["decelTo0", "$idleDecel"]],
+      "transitions": [
+        { "to": "ladderEnter", "if": ["held:UP", "ladderHere"] },
+        { "to": "jump", "if": ["recent:UP:$jumpBuffer"] },
+        { "to": "dropDown", "if": ["pressed:DOWN", "onOneWay"] },
+        { "to": "backFlip", "if": ["pressed:ACTION"] },
+        { "to": "turnFast", "if": ["want:BACK"] },
+        { "to": "start", "if": ["want:FWD", "!wallAhead:16"] }
+      ]
+    },
+    {
+      "name": "start",
+      "parent": "running",
+      "clip": "start",
+      "duration": "$startSteps",
+      "then": "run",
+      "stride": "$runStride",
+      "perStep": [["accelToward", "$runSpeed", "$startAccel"]]
+    },
+    {
+      "name": "run",
+      "parent": "running",
+      "clip": "run",
+      "stride": "$runStride",
+      "perStep": [["accelToward", "$runSpeed", "$runAccel"]],
+      "transitions": [
+        { "to": "runUphill", "if": ["slopeUp", "want:FWD"] },
+        { "to": "runDownhill", "if": ["slopeDown", "want:FWD"] }
+      ]
+    },
+    {
+      "name": "runUphill",
+      "parent": "running",
+      "clip": "runUphill",
+      "stride": "$uphillStride",
+      "perStep": [["accelToward", "$uphillSpeed", "$slopeAccel"]],
+      "transitions": [{ "to": "run", "if": ["!slopeUp"] }]
+    },
+    {
+      "name": "runDownhill",
+      "parent": "running",
+      "clip": "runDownhill",
+      "stride": "$downhillStride",
+      "perStep": [["accelToward", "$downhillSpeed", "$slopeAccel"]],
+      "transitions": [{ "to": "run", "if": ["!slopeDown"] }]
+    },
+    {
+      "name": "coast",
+      "parent": "moving",
+      "clip": "run",
+      "stride": "$runStride",
+      "comment": "Forward just let go at speed: the run carries on for a few steps. Pressing forward again leaps (tigerJump).",
+      "transitions": [
+        { "to": "tigerJump", "if": ["pressed:FWD", "speedAbove:$tigerMinSpeed"] },
+        { "to": "run", "if": ["held:FWD"] },
+        { "to": "skid", "if": ["timer:$coastSteps", "speedAbove:$skidMinSpeed"] },
+        { "to": "idle", "if": ["timer:$coastSteps"] }
+      ]
+    },
+    {
+      "name": "skid",
+      "parent": "grounded",
+      "clip": "stand",
+      "perStep": [["decelTo0", "$skidDecel"]],
+      "transitions": [
+        { "to": "jump", "if": ["recent:UP:$jumpBuffer"] },
+        { "to": "run", "if": ["want:FWD"] },
+        { "to": "turn", "if": ["want:BACK", "speedAbove:$turnFastMaxSpeed"] },
+        { "to": "turnFast", "if": ["want:BACK"] },
+        { "to": "idle", "if": ["speedBelow:16"] }
+      ]
+    },
+    {
+      "name": "turn",
+      "parent": "grounded",
+      "clip": "turn",
+      "duration": "$turnSteps",
+      "then": "turnFlip",
+      "comment": "A braking turn at speed: the old facing stays until the instant turnFlip.",
+      "perStep": [["decelTo0", "$turnDecel"]]
+    },
+    {
+      "name": "turnFast",
+      "parent": "grounded",
+      "clip": "turnFast",
+      "duration": "$turnFastSteps",
+      "then": "turnFlip",
+      "comment": "A quick pivot from a stand or a slow run.",
+      "perStep": [["decelTo0", "$turnFastDecel"]]
+    },
+    {
+      "name": "turnFlip",
+      "parent": "grounded",
+      "clip": "turn",
+      "duration": 0,
+      "then": "idle",
+      "onEnter": [["flipFacing"]],
+      "transitions": [{ "to": "start", "if": ["want:FWD"] }]
+    },
+    {
+      "name": "dropDown",
+      "parent": "base",
+      "clip": "fall",
+      "duration": 0,
+      "then": "fall",
+      "comment": "Through a one-way floor.",
+      "onEnter": [["dropThrough", "$dropSteps"]]
+    },
+
+    {
+      "name": "jump",
+      "parent": "freeAir",
+      "clip": "jump",
+      "duration": "$jumpSteps",
+      "then": "fall",
+      "onEnter": [["jump", "$jumpVY", "$jumpPerSpeed"]],
+      "perStep": [["airControl", "$airAccel", "$airSpeed"]],
+      "transitions": [{ "to": "fall", "if": ["headBlocked"] }]
+    },
+    {
+      "name": "tigerJump",
+      "parent": "freeAir",
+      "clip": "tigerJump",
+      "duration": "$tigerSteps",
+      "then": "fall",
+      "comment": "A long, low, fast leap from a run: forward let go and pressed again.",
+      "onEnter": [
+        ["jump", "$tigerVY", 0],
+        ["minForward", "$tigerSpeed"]
+      ],
+      "perStep": [["airControl", "$airAccel", "$airSpeed"]],
+      "transitions": [
+        { "to": "run", "if": ["onGround", "want:FWD"], "priority": 56 },
+        { "to": "roll", "if": ["onGround"], "priority": 55 }
+      ]
+    },
+    {
+      "name": "fall",
+      "parent": "freeAir",
+      "clip": "fall",
+      "loop": 24,
+      "perStep": [["airControl", "$airAccel", "$airSpeed"]],
+      "transitions": [
+        { "to": "jump", "if": ["pressed:UP", "!airSteps:$coyoteSteps"], "priority": 39 }
+      ]
+    },
+    {
+      "name": "landSoft",
+      "parent": "grounded",
+      "clip": "landing",
+      "duration": "$landSoftSteps",
+      "then": "idle",
+      "transitions": [
+        { "to": "jump", "if": ["recent:UP:$jumpBuffer"] },
+        { "to": "run", "if": ["want:FWD", "timer:1"] },
+        { "to": "turnFast", "if": ["want:BACK", "timer:2"] }
+      ]
+    },
+    {
+      "name": "landHard",
+      "parent": "grounded",
+      "clip": "landing",
+      "duration": "$landHardSteps",
+      "then": "idle",
+      "perStep": [["decelTo0", "$landHardDecel"]]
+    },
+    {
+      "name": "roll",
+      "parent": "grounded",
+      "clip": "roll",
+      "flags": ["crouch"],
+      "duration": "$rollSteps",
+      "then": "idle",
+      "perStep": [["accelToward", "$rollSpeed", "$rollAccel"]],
+      "transitions": [
+        { "to": "roll", "if": ["ended", "!canStand"] },
+        { "to": "run", "if": ["ended", "want:FWD"] }
+      ]
+    },
+    {
+      "name": "frontFlip",
+      "parent": "airborne",
+      "clip": "frontFlip",
+      "duration": "$frontFlipSteps",
+      "then": "fall",
+      "comment": "A trick: landing in its first half crashes, in its last third stumbles.",
+      "onEnter": [["hop", "$flipHopVY"]],
+      "perStep": [["airControl", "$airAccel", "$airSpeed"]],
+      "transitions": [
+        { "to": "crashDown", "if": ["onGround", "!timer:$flipSafe"], "priority": 79 },
+        { "to": "stumble", "if": ["onGround", "!timer:$flipClean"], "priority": 78 }
+      ]
+    },
+    {
+      "name": "backFlip",
+      "parent": "airborne",
+      "clip": "backFlip",
+      "duration": "$backFlipSteps",
+      "then": "fall",
+      "onEnter": [["hop", "$flipHopVY"]],
+      "perStep": [["airControl", "$airAccel", "$airSpeed"]],
+      "transitions": [
+        { "to": "crashDown", "if": ["onGround", "!timer:$flipSafe"], "priority": 79 },
+        { "to": "stumble", "if": ["onGround", "!timer:$flipClean"], "priority": 78 }
+      ]
+    },
+
+    {
+      "name": "stumble",
+      "parent": "grounded",
+      "clip": "stumble",
+      "flags": ["noTurn"],
+      "duration": "$stumbleSteps",
+      "then": "idle",
+      "perStep": [["decelTo0", "$stumbleDecel"]],
+      "transitions": [{ "to": "run", "if": ["ended", "want:FWD"] }]
+    },
+    {
+      "name": "trip",
+      "parent": "base",
+      "clip": "stumble",
+      "flags": ["lockFacing", "noTurn"],
+      "duration": "$tripSteps",
+      "then": "crashFall",
+      "comment": "The feet caught a knee-high edge in the air: tumble over it.",
+      "onEnter": [
+        ["setVX", "$tripVX"],
+        ["setVY", "$tripVY"]
+      ],
+      "transitions": [
+        { "to": "dead", "if": ["onGround", "landedFaster:$fatalVY"], "priority": 80 },
+        { "to": "crashDown", "if": ["onGround", "timer:2"], "priority": 70 }
+      ]
+    },
+    {
+      "name": "crash",
+      "parent": "base",
+      "clip": "crash",
+      "flags": ["lockFacing", "noTurn"],
+      "duration": "$crashSteps",
+      "then": "crashFall",
+      "comment": "Slammed into a wall: bounce back.",
+      "onEnter": [
+        ["setVX", "$crashBounceVX"],
+        ["setVY", "$crashHopVY"]
+      ]
+    },
+    {
+      "name": "crashFall",
+      "parent": "base",
+      "clip": "crashFall",
+      "flags": ["lockFacing", "noTurn"],
+      "transitions": [
+        { "to": "dead", "if": ["onGround", "landedFaster:$fatalVY"], "priority": 80 },
+        { "to": "crashDown", "if": ["onGround"], "priority": 70 }
+      ]
+    },
+    {
+      "name": "crashDown",
+      "parent": "grounded",
+      "clip": "crashDown",
+      "flags": ["noTurn"],
+      "duration": "$crashDownSteps",
+      "then": "getUp",
+      "perStep": [["decelTo0", "$crashDownDecel"]]
+    },
+    {
+      "name": "getUp",
+      "parent": "grounded",
+      "clip": "getUp",
+      "flags": ["noTurn"],
+      "duration": "$getUpSteps",
+      "then": "idle",
+      "perStep": [["decelTo0", "$crashDownDecel"]]
+    },
+
+    {
+      "name": "wallRun",
+      "parent": "base",
+      "clip": "wallRun",
+      "flags": ["noGravity", "lockFacing"],
+      "duration": "$wallRunSteps",
+      "then": "fall",
+      "comment": "Up a wall on the speed of the approach; ends at a ledge, a kick-off or when it slows.",
+      "onEnter": [["climbJump", "$wallRunVY", "$wallRunPerSpeed"]],
+      "perStep": [
+        ["minForward", "$wallRunPress"],
+        ["addVY", "$wallRunGravity"]
+      ],
+      "transitions": [
+        { "to": "landSoft", "if": ["onGround", "timer:2"], "priority": 70 },
+        {
+          "to": "wallRunTop",
+          "if": ["held:UP", "ledgeTopAhead:$ledgeReach:0:$grabHigh"],
+          "priority": 60
+        },
+        { "to": "ledgeGrab", "if": ["ledgeAhead:$ledgeReach:$grabLow:$grabHigh"], "priority": 55 },
+        { "to": "ticTac", "if": ["pressed:UP", "timer:2"], "priority": 50 },
+        { "to": "wallFlip", "if": ["pressed:BACK"], "priority": 48 },
+        { "to": "fall", "if": ["!wallAhead:$wallReach"], "priority": 45 },
+        { "to": "fall", "if": ["vyAbove:$wallRunEndVY"], "priority": 44 }
+      ]
+    },
+    {
+      "name": "wallRunTop",
+      "parent": "base",
+      "clip": "wallRunKick",
+      "flags": ["noGravity", "noCollide"],
+      "duration": "$wallTopSteps",
+      "then": "idle",
+      "comment": "Over the top of the wall onto its roof.",
+      "onEnter": [["grabLedge", "$ledgeReach", 0, "$grabHigh"]],
+      "perStep": [["glide", "$climbIn", 0, "$wallTopLift"]],
+      "transitions": [{ "to": "run", "if": ["ended", "want:FWD"] }]
+    },
+    {
+      "name": "ticTac",
+      "parent": "freeAir",
+      "clip": "wallRunKick",
+      "duration": "$ticTacSteps",
+      "then": "fall",
+      "comment": "A kick off the wall in front, turning away from it (chains up a shaft).",
+      "onEnter": [["flipFacing"], ["setVX", "$ticTacVX"], ["setVY", "$ticTacVY"]],
+      "perStep": [["airControl", "$airAccel", "$airSpeed"]]
+    },
+    {
+      "name": "wallFlip",
+      "parent": "airborne",
+      "clip": "wallFlip",
+      "duration": "$wallFlipSteps",
+      "then": "fall",
+      "comment": "A back flip off the wall during a wall run.",
+      "onEnter": [
+        ["flipFacing"],
+        ["setVX", "$wallFlipVX"],
+        ["setVY", "$wallFlipVY"],
+        ["lockGrips", "$gripLock"]
+      ],
+      "perStep": [["airControl", "$airAccel", "$airSpeed"]]
+    },
+
+    {
+      "name": "ledgeGrab",
+      "parent": "base",
+      "clip": "ledgeGrab",
+      "flags": ["noGravity", "noCollide", "anchorHands"],
+      "duration": "$ledgeGrabSteps",
+      "then": "ledgeHang",
+      "onEnter": [["grabLedge", "$ledgeReach", "$grabLow", "$grabHigh"]],
+      "perStep": [["glide", "$hangBack", "$hangDrop", 0]]
+    },
+    {
+      "name": "ledgeHang",
+      "parent": "base",
+      "clip": "ledgeHang",
+      "flags": ["noGravity", "noCollide", "anchorHands"],
+      "perStep": [["hold", "$hangBack", "$hangDrop"]],
+      "transitions": [
+        { "to": "ledgeClimb", "if": ["pressed:UP", "ledgeRoom:$climbIn"] },
+        { "to": "ledgeClimb", "if": ["want:FWD", "timer:$ledgeHoldSteps", "ledgeRoom:$climbIn"] },
+        { "to": "ledgeJumpBack", "if": ["pressed:BACK"] },
+        { "to": "ledgeDrop", "if": ["pressed:DOWN"] }
+      ]
+    },
+    {
+      "name": "ledgeClimb",
+      "parent": "base",
+      "clip": "ledgeClimb",
+      "flags": ["noGravity", "noCollide", "anchorHands"],
+      "duration": "$ledgeClimbSteps",
+      "then": "idle",
+      "perStep": [["glide", "$climbIn", 0, "$ledgeClimbLift"]],
+      "transitions": [{ "to": "start", "if": ["ended", "want:FWD"] }]
+    },
+    {
+      "name": "ledgeDrop",
+      "parent": "airborne",
+      "clip": "ledgeDrop",
+      "duration": "$ledgeDropSteps",
+      "then": "fall",
+      "onEnter": [["zeroV"], ["lockGrips", "$gripLock"]]
+    },
+    {
+      "name": "ledgeJumpBack",
+      "parent": "freeAir",
+      "clip": "ledgeJumpBack",
+      "duration": "$ledgeJumpBackSteps",
+      "then": "fall",
+      "onEnter": [
+        ["flipFacing"],
+        ["setVX", "$ledgeJumpBackVX"],
+        ["setVY", "$ledgeJumpBackVY"],
+        ["lockGrips", "$gripLock"]
+      ],
+      "perStep": [["airControl", "$airAccel", "$airSpeed"]]
+    },
+
+    {
+      "name": "stepOver",
+      "parent": "airborne",
+      "clip": "stepOver",
+      "duration": "$stepOverSteps",
+      "then": "fall",
+      "comment": "A knee-high obstacle taken in stride.",
+      "onEnter": [
+        ["setVY", "$stepOverVY"],
+        ["minForward", "$stepOverSpeed"]
+      ],
+      "perStep": [["minForward", "$stepOverSpeed"]],
+      "transitions": [{ "to": "run", "if": ["onGround", "want:FWD"], "priority": 55 }]
+    },
+    {
+      "name": "vault",
+      "parent": "base",
+      "clip": "vault",
+      "flags": ["noGravity", "noCollide"],
+      "duration": "$vaultSteps",
+      "then": "landSoft",
+      "comment": "Hands on a crate-high obstacle one cell long, over it.",
+      "onEnter": [["vaultStart", "$vaultReach", "$vaultMaxH", 1]],
+      "perStep": [["glide", 0, 0, "$vaultLift"]],
+      "onExit": [["restoreSpeed"]],
+      "transitions": [{ "to": "run", "if": ["ended", "want:FWD"] }]
+    },
+    {
+      "name": "monkeyVault",
+      "parent": "base",
+      "clip": "monkeyVault",
+      "flags": ["noGravity", "noCollide"],
+      "duration": "$monkeyVaultSteps",
+      "then": "landSoft",
+      "comment": "Both hands on an obstacle two cells long, legs through.",
+      "onEnter": [["vaultStart", "$vaultReach", "$vaultMaxH", 2]],
+      "perStep": [["glide", 0, 0, "$monkeyVaultLift"]],
+      "onExit": [["restoreSpeed"]],
+      "transitions": [{ "to": "run", "if": ["ended", "want:FWD"] }]
+    },
+    {
+      "name": "slideUnder",
+      "parent": "grounded",
+      "clip": "roll",
+      "flags": ["crouch"],
+      "comment": "Under a low ceiling, until there is room to stand.",
+      "perStep": [
+        ["accelToward", "$slideSpeed", "$slideAccel"],
+        ["minForward", "$slideMinSpeed"]
+      ],
+      "transitions": [
+        { "to": "run", "if": ["canStand", "timer:$slideMinSteps", "want:FWD"] },
+        { "to": "idle", "if": ["canStand", "timer:$slideMinSteps"] }
+      ]
+    },
+
+    {
+      "name": "ladderEnter",
+      "parent": "base",
+      "clip": "ladderEnter",
+      "flags": ["noGravity", "noCollide"],
+      "duration": "$ladderEnterSteps",
+      "then": "ladderClimb",
+      "onEnter": [["grabLadder"]],
+      "perStep": [["glide", 0, 0, 0]]
+    },
+    {
+      "name": "ladderClimb",
+      "parent": "base",
+      "clip": "ladderClimb",
+      "flags": ["noGravity", "cycle"],
+      "stride": "$ladderStride",
+      "perStep": [["climbWant", "$ladderUp", "$ladderDown"]],
+      "transitions": [
+        { "to": "ladderTop", "if": ["want:UP", "ladderTop:$ladderTopReach"], "priority": 60 },
+        { "to": "idle", "if": ["onGround", "want:DOWN"], "priority": 55 },
+        { "to": "ladderSlide", "if": ["want:DOWN", "!onGround"], "priority": 50 },
+        { "to": "letGo", "if": ["!ladderHere"], "priority": 45 },
+        { "to": "ladderLeave", "if": ["pressed:FWD"], "priority": 40 },
+        { "to": "ladderLeave", "if": ["pressed:BACK"], "priority": 40 }
+      ]
+    },
+    {
+      "name": "ladderSlide",
+      "parent": "base",
+      "clip": "ladderSlide",
+      "flags": ["noGravity"],
+      "perStep": [
+        ["alignGrip", 0],
+        ["addVY", "$ladderSlideAccel"],
+        ["maxVY", "$ladderSlideMax"]
+      ],
+      "transitions": [
+        { "to": "landSoft", "if": ["onGround"], "priority": 60 },
+        { "to": "ladderClimb", "if": ["!held:DOWN"], "priority": 50 },
+        { "to": "letGo", "if": ["!ladderHere"], "priority": 45 },
+        { "to": "ladderLeave", "if": ["pressed:FWD"], "priority": 40 },
+        { "to": "ladderLeave", "if": ["pressed:BACK"], "priority": 40 }
+      ]
+    },
+    {
+      "name": "ladderTop",
+      "parent": "base",
+      "clip": "ladderTop",
+      "flags": ["noGravity", "noCollide"],
+      "duration": "$ladderTopSteps",
+      "then": "idle",
+      "comment": "Off the top of the ladder onto the floor beside it.",
+      "onEnter": [["ladderExit"]],
+      "perStep": [["glide", "$climbIn", 0, "$ladderTopLift"]],
+      "transitions": [{ "to": "start", "if": ["ended", "want:FWD"] }]
+    },
+    {
+      "name": "ladderLeave",
+      "parent": "base",
+      "clip": "fall",
+      "duration": 0,
+      "then": "fall",
+      "onEnter": [["faceWant"], ["setVX", "$ladderLeaveVX"], ["lockGrips", "$gripLock"]]
+    },
+    {
+      "name": "letGo",
+      "parent": "base",
+      "clip": "fall",
+      "duration": 0,
+      "then": "fall",
+      "onEnter": [["lockGrips", "$gripLock"]]
+    },
+
+    {
+      "name": "poleGrab",
+      "parent": "base",
+      "clip": "poleGrab",
+      "flags": ["noGravity", "noCollide", "anchorHands"],
+      "duration": "$poleGrabSteps",
+      "then": "poleSlide",
+      "onEnter": [["grabPole", "$poleReach"]],
+      "perStep": [["glide", "$poleBack", 0, 0]]
+    },
+    {
+      "name": "poleSlide",
+      "parent": "base",
+      "clip": "poleSlide",
+      "flags": ["noGravity", "anchorHands"],
+      "perStep": [
+        ["alignGrip", "$poleBack"],
+        ["addVY", "$poleGravity"],
+        ["maxVY", "$poleMaxVY"]
+      ],
+      "transitions": [
+        { "to": "landSoft", "if": ["onGround"], "priority": 60 },
+        { "to": "poleJump", "if": ["pressed:UP"], "priority": 55 },
+        { "to": "letGo", "if": ["!poleAtHands"], "priority": 50 },
+        { "to": "letGo", "if": ["pressed:DOWN"], "priority": 45 }
+      ]
+    },
+    {
+      "name": "poleJump",
+      "parent": "freeAir",
+      "clip": "poleJump",
+      "duration": "$poleJumpSteps",
+      "then": "fall",
+      "onEnter": [
+        ["faceWant"],
+        ["setVX", "$poleJumpVX"],
+        ["setVY", "$poleJumpVY"],
+        ["lockGrips", "$gripLock"]
+      ],
+      "perStep": [["airControl", "$airAccel", "$airSpeed"]]
+    },
+    {
+      "name": "poleSpin",
+      "parent": "base",
+      "clip": "poleSpin",
+      "flags": ["noGravity", "noCollide", "anchorHands"],
+      "duration": "$poleSpinSteps",
+      "then": "fall",
+      "comment": "Round the pole at speed and on in the same direction.",
+      "onEnter": [["grabPole", "$poleReach"]],
+      "perStep": [["glide", "$poleFront", 0, 0]],
+      "onExit": [
+        ["restoreSpeed"],
+        ["minForward", "$poleSpinOut"],
+        ["setVY", "$poleSpinVY"],
+        ["lockGrips", "$gripLock"]
+      ]
+    },
+
+    {
+      "name": "barGrab",
+      "parent": "base",
+      "clip": "barGrab",
+      "flags": ["noGravity", "noCollide", "anchorHands"],
+      "duration": "$barGrabSteps",
+      "then": "barSwing",
+      "onEnter": [["grabBar", "$barLow", "$barHigh"]],
+      "perStep": [["glide", 0, "$barHang", 0]]
+    },
+    {
+      "name": "barSwing",
+      "parent": "base",
+      "clip": "barSwing",
+      "flags": ["noGravity", "noCollide", "anchorHands"],
+      "loop": "$barSwingLoop",
+      "perStep": [["hold", 0, "$barHang"]],
+      "transitions": [
+        { "to": "barJump", "if": ["pressed:UP"] },
+        { "to": "letGo", "if": ["pressed:DOWN"] }
+      ]
+    },
+    {
+      "name": "barJump",
+      "parent": "freeAir",
+      "clip": "barJump",
+      "duration": "$barJumpSteps",
+      "then": "fall",
+      "onEnter": [
+        ["faceWant"],
+        ["restoreSpeed"],
+        ["minForward", "$barJumpVX"],
+        ["setVY", "$barJumpVY"],
+        ["lockGrips", "$gripLock"]
+      ],
+      "perStep": [["airControl", "$airAccel", "$airSpeed"]]
+    },
+
+    {
+      "name": "dead",
+      "clip": "crashDown",
+      "flags": ["noGravity", "noCollide"],
+      "duration": "$deadSteps",
+      "then": "respawn",
+      "onEnter": [["zeroV"]]
+    },
+    {
+      "name": "respawn",
+      "clip": "stand",
+      "duration": 0,
+      "then": "idle",
+      "onEnter": [["respawn"]]
+    },
+    {
+      "name": "frozen",
+      "clip": "idle",
+      "flags": ["noGravity", "noCollide"],
+      "onEnter": [["zeroV"]]
+    }
+  ]
+}

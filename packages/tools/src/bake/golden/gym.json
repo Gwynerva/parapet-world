@@ -1,0 +1,701 @@
+{
+  "comment": "Golden traces of the gym scenarios (packages/tools/src/bake/gym.ts). Regenerate with UPDATE_GOLDEN=1 npx vitest run packages/tools after an intended change.",
+  "ruleset": 3471412587,
+  "scenarios": {
+    "ground": {
+      "steps": 86,
+      "input": [
+        { "steps": 6, "held": 0 },
+        { "steps": 22, "held": 2 },
+        { "steps": 18, "held": 0 },
+        { "steps": 16, "held": 1 },
+        { "steps": 14, "held": 2 },
+        { "steps": 10, "held": 0 }
+      ],
+      "entered": [
+        [6, "start"],
+        [16, "run"],
+        [28, "coast"],
+        [35, "skid"],
+        [46, "turnFast"],
+        [52, "turnFlip"],
+        [52, "start"],
+        [62, "turn"],
+        [71, "turnFlip"],
+        [71, "start"],
+        [76, "idle"]
+      ],
+      "chain": 1836181216,
+      "checkpoints": [1595327591, 2405462290, 4234419264, 1031911608, 1967345748],
+      "final": { "move": "idle", "x": 7812, "y": 16384 }
+    },
+    "crash": {
+      "steps": 121,
+      "input": [
+        { "steps": 68, "held": 2 },
+        { "steps": 53, "held": 0 }
+      ],
+      "entered": [
+        [0, "start"],
+        [10, "run"],
+        [67, "crash"],
+        [75, "crashFall"],
+        [76, "crashDown"],
+        [90, "getUp"],
+        [120, "idle"]
+      ],
+      "chain": 890844691,
+      "checkpoints": [
+        1139818324, 3352079328, 1717461268, 121009576, 2381950983, 4162268466, 2503518114
+      ],
+      "final": { "move": "idle", "x": 12442, "y": 16384 }
+    },
+    "ledgeClimb": {
+      "steps": 33,
+      "input": [
+        { "steps": 3, "held": 0 },
+        { "steps": 1, "held": 4 },
+        { "steps": 10, "held": 0 },
+        { "steps": 1, "held": 4 },
+        { "steps": 18, "held": 0 }
+      ],
+      "entered": [
+        [3, "jump"],
+        [4, "ledgeGrab"],
+        [9, "ledgeHang"],
+        [14, "ledgeClimb"],
+        [32, "idle"]
+      ],
+      "chain": 1611958283,
+      "checkpoints": [3254485398, 1690561859],
+      "final": { "move": "idle", "x": 13632, "y": 14336 }
+    },
+    "ledgeDrop": {
+      "steps": 25,
+      "input": [
+        { "steps": 3, "held": 0 },
+        { "steps": 1, "held": 4 },
+        { "steps": 10, "held": 0 },
+        { "steps": 1, "held": 8 },
+        { "steps": 10, "held": 0 }
+      ],
+      "entered": [
+        [3, "jump"],
+        [4, "ledgeGrab"],
+        [9, "ledgeHang"],
+        [14, "ledgeDrop"],
+        [18, "fall"],
+        [20, "landSoft"],
+        [24, "idle"]
+      ],
+      "chain": 1519857960,
+      "checkpoints": [821209328],
+      "final": { "move": "idle", "x": 13056, "y": 16384 }
+    },
+    "ledgeJumpBack": {
+      "steps": 40,
+      "input": [
+        { "steps": 3, "held": 0 },
+        { "steps": 1, "held": 4 },
+        { "steps": 10, "held": 0 },
+        { "steps": 1, "held": 1 },
+        { "steps": 25, "held": 0 }
+      ],
+      "entered": [
+        [3, "jump"],
+        [4, "ledgeGrab"],
+        [9, "ledgeHang"],
+        [14, "ledgeJumpBack"],
+        [26, "fall"],
+        [35, "landSoft"],
+        [39, "idle"]
+      ],
+      "chain": 625052347,
+      "checkpoints": [986454903, 2234014610],
+      "final": { "move": "idle", "x": 9186, "y": 16384 }
+    },
+    "wallRunTop": {
+      "steps": 42,
+      "input": [
+        { "steps": 20, "held": 2 },
+        { "steps": 16, "held": 6 },
+        { "steps": 6, "held": 2 }
+      ],
+      "entered": [
+        [0, "start"],
+        [10, "run"],
+        [20, "wallRun"],
+        [27, "wallRunTop"],
+        [35, "run"]
+      ],
+      "chain": 696571560,
+      "checkpoints": [846583708, 2779427257],
+      "final": { "move": "run", "x": 20224, "y": 12288 }
+    },
+    "wallRunLedge": {
+      "steps": 54,
+      "input": [
+        { "steps": 20, "held": 2 },
+        { "steps": 1, "held": 6 },
+        { "steps": 14, "held": 2 },
+        { "steps": 1, "held": 4 },
+        { "steps": 18, "held": 0 }
+      ],
+      "entered": [
+        [0, "start"],
+        [10, "run"],
+        [20, "wallRun"],
+        [27, "ledgeGrab"],
+        [32, "ledgeHang"],
+        [35, "ledgeClimb"],
+        [53, "idle"]
+      ],
+      "chain": 2509355702,
+      "checkpoints": [846583708, 3011697744, 1014216300],
+      "final": { "move": "idle", "x": 19776, "y": 12288 }
+    },
+    "wallFlip": {
+      "steps": 63,
+      "input": [
+        { "steps": 20, "held": 2 },
+        { "steps": 1, "held": 6 },
+        { "steps": 4, "held": 2 },
+        { "steps": 1, "held": 1 },
+        { "steps": 37, "held": 0 }
+      ],
+      "entered": [
+        [0, "start"],
+        [10, "run"],
+        [20, "wallRun"],
+        [25, "wallFlip"],
+        [49, "fall"],
+        [52, "landHard"],
+        [62, "idle"]
+      ],
+      "chain": 4057652477,
+      "checkpoints": [3578421348, 2391579446, 142823108],
+      "final": { "move": "idle", "x": 21760, "y": 16384 }
+    },
+    "ticTacShaft": {
+      "steps": 57,
+      "input": [
+        { "steps": 2, "held": 0 },
+        { "steps": 1, "held": 4 },
+        { "steps": 3, "held": 0 },
+        { "steps": 1, "held": 4 },
+        { "steps": 4, "held": 0 },
+        { "steps": 7, "held": 4 },
+        { "steps": 39, "held": 0 }
+      ],
+      "entered": [
+        [2, "jump"],
+        [6, "ticTac"],
+        [15, "wallRun"],
+        [32, "fall"],
+        [47, "landHard"]
+      ],
+      "chain": 3513554306,
+      "checkpoints": [923155583, 1182995976, 3600888551],
+      "final": { "move": "landHard", "x": 26880, "y": 16384 }
+    },
+    "catwalks": {
+      "steps": 36,
+      "input": [
+        { "steps": 3, "held": 0 },
+        { "steps": 1, "held": 4 },
+        { "steps": 19, "held": 0 },
+        { "steps": 1, "held": 8 },
+        { "steps": 12, "held": 0 }
+      ],
+      "entered": [
+        [3, "jump"],
+        [15, "fall"],
+        [18, "landSoft"],
+        [22, "idle"],
+        [23, "dropDown"],
+        [23, "fall"],
+        [31, "landSoft"],
+        [35, "idle"]
+      ],
+      "chain": 3965438445,
+      "checkpoints": [2765433594, 1967386479],
+      "final": { "move": "idle", "x": 38400, "y": 16384 }
+    },
+    "coyote": {
+      "steps": 42,
+      "input": [
+        { "steps": 21, "held": 2 },
+        { "steps": 1, "held": 6 },
+        { "steps": 16, "held": 2 },
+        { "steps": 4, "held": 0 }
+      ],
+      "entered": [
+        [0, "start"],
+        [10, "run"],
+        [20, "fall"],
+        [21, "jump"],
+        [33, "fall"],
+        [38, "landSoft"]
+      ],
+      "chain": 2502510147,
+      "checkpoints": [156201529, 1802028163],
+      "final": { "move": "landSoft", "x": 52540, "y": 13312 }
+    },
+    "landHard": {
+      "steps": 40,
+      "input": [
+        { "steps": 7, "held": 2 },
+        { "steps": 33, "held": 0 }
+      ],
+      "entered": [
+        [0, "start"],
+        [7, "coast"],
+        [9, "fall"],
+        [29, "landHard"],
+        [39, "idle"]
+      ],
+      "chain": 1766198736,
+      "checkpoints": [1122443842, 1275391198],
+      "final": { "move": "idle", "x": 67036, "y": 16384 }
+    },
+    "stumble": {
+      "steps": 76,
+      "input": [
+        { "steps": 52, "held": 2 },
+        { "steps": 24, "held": 0 }
+      ],
+      "entered": [
+        [0, "start"],
+        [10, "run"],
+        [31, "fall"],
+        [51, "stumble"],
+        [75, "idle"]
+      ],
+      "chain": 3866079772,
+      "checkpoints": [3547863053, 1947488032, 1083582613, 3440797017],
+      "final": { "move": "idle", "x": 70134, "y": 14858 }
+    },
+    "roll": {
+      "steps": 72,
+      "input": [
+        { "steps": 49, "held": 2 },
+        { "steps": 1, "held": 10 },
+        { "steps": 22, "held": 2 }
+      ],
+      "entered": [
+        [0, "start"],
+        [10, "run"],
+        [31, "fall"],
+        [51, "roll"],
+        [71, "run"]
+      ],
+      "chain": 894653159,
+      "checkpoints": [3547863053, 1947488032, 1083582613, 2993165425],
+      "final": { "move": "run", "x": 70920, "y": 14072 }
+    },
+    "fatal": {
+      "steps": 96,
+      "input": [
+        { "steps": 50, "held": 2 },
+        { "steps": 46, "held": 0 }
+      ],
+      "entered": [
+        [0, "start"],
+        [10, "run"],
+        [20, "fall"],
+        [49, "dead"],
+        [94, "respawn"],
+        [95, "idle"]
+      ],
+      "chain": 1582733571,
+      "checkpoints": [4198098005, 263853511, 714443305, 3456418417, 1851297905, 2981032544],
+      "final": { "move": "idle", "x": 3584, "y": 16384 }
+    },
+    "slopes": {
+      "steps": 161,
+      "input": [{ "steps": 161, "held": 2 }],
+      "entered": [
+        [0, "start"],
+        [10, "run"],
+        [13, "runUphill"],
+        [33, "run"],
+        [44, "runDownhill"],
+        [59, "run"],
+        [81, "runUphill"],
+        [108, "run"],
+        [125, "runDownhill"],
+        [144, "run"]
+      ],
+      "chain": 1605338023,
+      "checkpoints": [
+        55727071, 3554739236, 377027560, 1131163088, 4069465740, 3761203961, 3281486661, 1033259940,
+        4198888052, 4050547369
+      ],
+      "final": { "move": "run", "x": 95310, "y": 16384 }
+    },
+    "curbs": {
+      "steps": 175,
+      "input": [{ "steps": 175, "held": 2 }],
+      "entered": [
+        [0, "start"],
+        [10, "run"],
+        [25, "stepOver"],
+        [33, "fall"],
+        [36, "landSoft"],
+        [37, "fall"],
+        [43, "landSoft"],
+        [44, "run"],
+        [45, "stepOver"],
+        [53, "fall"],
+        [56, "landSoft"],
+        [57, "run"],
+        [70, "fall"],
+        [76, "landSoft"],
+        [77, "run"],
+        [78, "stepOver"],
+        [86, "fall"],
+        [89, "landSoft"],
+        [90, "run"],
+        [98, "fall"],
+        [104, "landSoft"],
+        [105, "run"],
+        [106, "stepOver"],
+        [114, "fall"],
+        [117, "landSoft"],
+        [118, "run"],
+        [126, "fall"],
+        [132, "landSoft"],
+        [133, "run"],
+        [134, "stepOver"],
+        [142, "fall"],
+        [145, "landSoft"],
+        [146, "run"],
+        [154, "fall"],
+        [160, "landSoft"],
+        [161, "run"]
+      ],
+      "chain": 1225023112,
+      "checkpoints": [
+        3539977517, 3400837926, 2415997752, 725584262, 1367046559, 1176300992, 3852834194,
+        2365470739, 3061992830, 994180483
+      ],
+      "final": { "move": "run", "x": 127122, "y": 16384 }
+    },
+    "flips": {
+      "steps": 161,
+      "input": [
+        { "steps": 3, "held": 0 },
+        { "steps": 1, "held": 16 },
+        { "steps": 25, "held": 0 },
+        { "steps": 1, "held": 4 },
+        { "steps": 1, "held": 16 },
+        { "steps": 22, "held": 0 },
+        { "steps": 1, "held": 4 },
+        { "steps": 3, "held": 0 },
+        { "steps": 1, "held": 16 },
+        { "steps": 39, "held": 0 },
+        { "steps": 1, "held": 4 },
+        { "steps": 15, "held": 0 },
+        { "steps": 1, "held": 16 },
+        { "steps": 47, "held": 0 }
+      ],
+      "entered": [
+        [3, "backFlip"],
+        [24, "landSoft"],
+        [28, "idle"],
+        [29, "jump"],
+        [30, "frontFlip"],
+        [48, "landSoft"],
+        [52, "idle"],
+        [53, "jump"],
+        [57, "frontFlip"],
+        [72, "stumble"],
+        [96, "idle"],
+        [97, "jump"],
+        [109, "fall"],
+        [113, "frontFlip"],
+        [116, "crashDown"],
+        [130, "getUp"],
+        [160, "idle"]
+      ],
+      "chain": 3030657589,
+      "checkpoints": [
+        1294684206, 1600248427, 1778076613, 1674158928, 1840665406, 1849119774, 706930288,
+        3106331032, 3720809129, 4052706953
+      ],
+      "final": { "move": "idle", "x": 125440, "y": 16384 }
+    },
+    "vaultTrip": {
+      "steps": 119,
+      "input": [
+        { "steps": 23, "held": 2 },
+        { "steps": 1, "held": 6 },
+        { "steps": 41, "held": 2 },
+        { "steps": 54, "held": 0 }
+      ],
+      "entered": [
+        [0, "start"],
+        [10, "run"],
+        [23, "vault"],
+        [37, "run"],
+        [64, "trip"],
+        [72, "crashFall"],
+        [74, "crashDown"],
+        [88, "getUp"],
+        [118, "idle"]
+      ],
+      "chain": 3554823709,
+      "checkpoints": [
+        3060391318, 469441655, 3220100677, 2228724987, 516638849, 2826629612, 1792437500
+      ],
+      "final": { "move": "idle", "x": 143104, "y": 16384 }
+    },
+    "monkeyVault": {
+      "steps": 50,
+      "input": [
+        { "steps": 22, "held": 2 },
+        { "steps": 1, "held": 6 },
+        { "steps": 27, "held": 2 }
+      ],
+      "entered": [
+        [0, "start"],
+        [10, "run"],
+        [22, "monkeyVault"],
+        [40, "run"]
+      ],
+      "chain": 3646587566,
+      "checkpoints": [1749716642, 1293157037, 683424005],
+      "final": { "move": "run", "x": 160880, "y": 16384 }
+    },
+    "postLedge": {
+      "steps": 29,
+      "input": [
+        { "steps": 3, "held": 0 },
+        { "steps": 1, "held": 4 },
+        { "steps": 14, "held": 0 },
+        { "steps": 1, "held": 8 },
+        { "steps": 10, "held": 0 }
+      ],
+      "entered": [
+        [3, "jump"],
+        [4, "ledgeGrab"],
+        [9, "ledgeHang"],
+        [18, "ledgeDrop"],
+        [22, "fall"],
+        [24, "landSoft"],
+        [28, "idle"]
+      ],
+      "chain": 1887087040,
+      "checkpoints": [2821397358],
+      "final": { "move": "idle", "x": 149632, "y": 16384 }
+    },
+    "ladderUp": {
+      "steps": 128,
+      "input": [
+        { "steps": 3, "held": 0 },
+        { "steps": 109, "held": 4 },
+        { "steps": 16, "held": 0 }
+      ],
+      "entered": [
+        [3, "ladderEnter"],
+        [8, "ladderClimb"],
+        [111, "ladderTop"],
+        [127, "idle"]
+      ],
+      "chain": 2381349730,
+      "checkpoints": [
+        2572375865, 2793057301, 2904846793, 3167153557, 4029411061, 3075268769, 3462038884,
+        2220127023
+      ],
+      "final": { "move": "idle", "x": 174400, "y": 6144 }
+    },
+    "ladderDown": {
+      "steps": 72,
+      "input": [
+        { "steps": 15, "held": 1 },
+        { "steps": 17, "held": 8 },
+        { "steps": 6, "held": 0 },
+        { "steps": 1, "held": 2 },
+        { "steps": 33, "held": 0 }
+      ],
+      "entered": [
+        [0, "start"],
+        [10, "run"],
+        [14, "fall"],
+        [15, "ladderEnter"],
+        [20, "ladderClimb"],
+        [21, "ladderSlide"],
+        [32, "ladderClimb"],
+        [38, "ladderLeave"],
+        [38, "fall"],
+        [61, "landHard"],
+        [71, "idle"]
+      ],
+      "chain": 2165579369,
+      "checkpoints": [2828776539, 2313668830, 2593682861, 3248139379],
+      "final": { "move": "idle", "x": 173824, "y": 16384 }
+    },
+    "poleSlide": {
+      "steps": 37,
+      "input": [
+        { "steps": 3, "held": 0 },
+        { "steps": 1, "held": 4 },
+        { "steps": 8, "held": 0 },
+        { "steps": 1, "held": 4 },
+        { "steps": 24, "held": 0 }
+      ],
+      "entered": [
+        [3, "jump"],
+        [4, "poleGrab"],
+        [9, "poleSlide"],
+        [12, "poleJump"],
+        [24, "fall"],
+        [32, "landSoft"],
+        [36, "idle"]
+      ],
+      "chain": 807075804,
+      "checkpoints": [1389174519, 1763414143],
+      "final": { "move": "idle", "x": 207542, "y": 16384 }
+    },
+    "poleDrop": {
+      "steps": 19,
+      "input": [
+        { "steps": 3, "held": 0 },
+        { "steps": 1, "held": 4 },
+        { "steps": 6, "held": 0 },
+        { "steps": 1, "held": 8 },
+        { "steps": 8, "held": 0 }
+      ],
+      "entered": [
+        [3, "jump"],
+        [4, "poleGrab"],
+        [9, "poleSlide"],
+        [10, "letGo"],
+        [10, "fall"],
+        [14, "landSoft"],
+        [18, "idle"]
+      ],
+      "chain": 1846036939,
+      "checkpoints": [2109726547],
+      "final": { "move": "idle", "x": 203072, "y": 16384 }
+    },
+    "poleSpin": {
+      "steps": 100,
+      "input": [
+        { "steps": 27, "held": 2 },
+        { "steps": 1, "held": 6 },
+        { "steps": 68, "held": 2 },
+        { "steps": 4, "held": 0 }
+      ],
+      "entered": [
+        [0, "start"],
+        [10, "run"],
+        [27, "jump"],
+        [39, "fall"],
+        [47, "poleSpin"],
+        [61, "fall"],
+        [77, "trip"],
+        [85, "crashFall"],
+        [96, "crashDown"]
+      ],
+      "chain": 2312623307,
+      "checkpoints": [4273899759, 441649564, 1221073679, 372309588, 502521648, 3238953742],
+      "final": { "move": "crashDown", "x": 220928, "y": 16384 }
+    },
+    "bars": {
+      "steps": 204,
+      "input": [
+        { "steps": 26, "held": 2 },
+        { "steps": 1, "held": 6 },
+        { "steps": 23, "held": 2 },
+        { "steps": 1, "held": 6 },
+        { "steps": 48, "held": 2 },
+        { "steps": 1, "held": 6 },
+        { "steps": 19, "held": 2 },
+        { "steps": 3, "held": 0 },
+        { "steps": 1, "held": 8 },
+        { "steps": 81, "held": 0 }
+      ],
+      "entered": [
+        [0, "start"],
+        [10, "run"],
+        [26, "jump"],
+        [38, "fall"],
+        [41, "barGrab"],
+        [45, "barSwing"],
+        [50, "barJump"],
+        [62, "fall"],
+        [74, "landSoft"],
+        [75, "run"],
+        [99, "jump"],
+        [111, "fall"],
+        [114, "barGrab"],
+        [118, "barSwing"],
+        [122, "letGo"],
+        [122, "fall"],
+        [157, "dead"],
+        [202, "respawn"],
+        [203, "idle"]
+      ],
+      "chain": 2625677973,
+      "checkpoints": [
+        149470283, 2984205727, 1384021993, 3361672206, 826201353, 856739418, 3435404916, 1283802116,
+        1835652677, 207375477, 2213553941, 3177218869
+      ],
+      "final": { "move": "idle", "x": 3584, "y": 16384 }
+    },
+    "slab": {
+      "steps": 95,
+      "input": [
+        { "steps": 26, "held": 2 },
+        { "steps": 1, "held": 10 },
+        { "steps": 68, "held": 2 }
+      ],
+      "entered": [
+        [0, "start"],
+        [10, "run"],
+        [26, "slideUnder"],
+        [79, "run"]
+      ],
+      "chain": 3756918808,
+      "checkpoints": [153899576, 1409926367, 2363618188, 2175572001, 4292092287],
+      "final": { "move": "run", "x": 279680, "y": 16384 }
+    },
+    "tigerJump": {
+      "steps": 50,
+      "input": [
+        { "steps": 25, "held": 2 },
+        { "steps": 3, "held": 0 },
+        { "steps": 22, "held": 2 }
+      ],
+      "entered": [
+        [0, "start"],
+        [10, "run"],
+        [25, "coast"],
+        [28, "tigerJump"],
+        [44, "run"]
+      ],
+      "chain": 889190793,
+      "checkpoints": [406947632, 848370746, 3294084736],
+      "final": { "move": "run", "x": 318140, "y": 16384 }
+    },
+    "sewage": {
+      "steps": 73,
+      "input": [
+        { "steps": 27, "held": 2 },
+        { "steps": 46, "held": 0 }
+      ],
+      "entered": [
+        [0, "start"],
+        [10, "run"],
+        [25, "fall"],
+        [26, "dead"],
+        [71, "respawn"],
+        [72, "idle"]
+      ],
+      "chain": 1423625175,
+      "checkpoints": [328675116, 1370723413, 2599468277, 3413549653],
+      "final": { "move": "idle", "x": 3584, "y": 16384 }
+    }
+  }
+}

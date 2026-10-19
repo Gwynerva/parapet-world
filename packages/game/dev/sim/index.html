@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sim debug</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #101218;
+        --panel: #181b24;
+        --line: #2a2f3d;
+        --text: #d8dbe4;
+        --dim: #8a90a2;
+        --accent: #f0b34a;
+      }
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        background: var(--bg);
+        color: var(--text);
+        font:
+          12px/1.4 ui-monospace,
+          Consolas,
+          monospace;
+        overflow: hidden;
+      }
+      #wrap {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        height: 100%;
+      }
+      canvas {
+        display: block;
+        width: 100%;
+        height: 100%;
+        cursor: crosshair;
+      }
+      aside {
+        background: var(--panel);
+        border-left: 1px solid var(--line);
+        overflow: auto;
+        padding: 8px 10px;
+      }
+      h2 {
+        font-size: 12px;
+        margin: 12px 0 4px;
+        color: var(--accent);
+      }
+      pre {
+        margin: 0;
+        white-space: pre-wrap;
+      }
+      #params label {
+        display: grid;
+        grid-template-columns: 1fr 84px;
+        gap: 6px;
+        align-items: center;
+        margin: 1px 0;
+      }
+      #params input {
+        width: 76px;
+        background: var(--bg);
+        color: var(--text);
+        border: 1px solid var(--line);
+        font: inherit;
+        padding: 1px 3px;
+      }
+      #params input.changed {
+        border-color: var(--accent);
+      }
+      #filter {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 4px;
+        background: var(--bg);
+        color: var(--text);
+        border: 1px solid var(--line);
+        font: inherit;
+        padding: 2px 4px;
+      }
+      .err {
+        color: #ff7a6b;
+      }
+      .dim {
+        color: var(--dim);
+      }
+      button {
+        background: var(--bg);
+        color: var(--text);
+        border: 1px solid var(--line);
+        font: inherit;
+        padding: 2px 6px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <canvas id="view"></canvas>
+      <aside>
+        <pre id="state">loading...</pre>
+        <h2>Keys</h2>
+        <pre class="dim">
+arrows / WASD  move, up = jump / climb
+Z or Space     up      X or Shift  action
+P pause  .  step  M slow motion  R respawn
+F frozen role      wheel zoom
+click          put the runner there
+?world=city    the city instead of the gym</pre>
+        <h2>Events</h2>
+        <pre id="events" class="dim"></pre>
+        <h2>Parameters <button id="reset">reset</button> <button id="copy">copy JSON</button></h2>
+        <div id="perr" class="err"></div>
+        <input id="filter" placeholder="filter" />
+        <div id="params"></div>
+      </aside>
+    </div>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>
